@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_IndicatorDialog"
+        android:text="@string/popup"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_slider"
+        android:text="@string/slider"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_picker"
+        android:text="@string/picker"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_dialogs"
+        android:text="@string/dialogs"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_imagepicker"
+        android:text="@string/imagepicker"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_indicator"
+        android:text="@string/indicator"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_code"
+        android:text="@string/code"
+        style="@style/bt_ordinary"/>
+
+</LinearLayout>

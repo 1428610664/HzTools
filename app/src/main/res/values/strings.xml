@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HzTools</string>
+
+
+    <string name="popup">popup弹窗</string>
+    <string name="slider">轮播</string>
+    <string name="picker">picker选择器</string>
+    <string name="dialogs">弹窗</string>
+    <string name="imagepicker">图片选择器</string>
+    <string name="timer">时间选择</string>
+    <string name="city">城市三级联动</string>
+    <string name="indicator">指示器</string>
+    <string name="code">二维码扫描</string>
+</resources>

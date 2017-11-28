@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_timer"
+        android:text="@string/timer"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_city"
+        android:text="@string/city"
+        style="@style/bt_ordinary"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "hz.com.hztools"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:24.2.1'
+    resolutionStrategy.force 'com.android.support:recyclerview-v7:24.2.1'
+    resolutionStrategy.force 'com.android.support:appcompat-v7:24.2.1'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+
+    compile 'com.google.code.gson:gson:2.3.1'
+    /* popup弹窗 */
+    compile 'com.github.jiang111:IndicatorDialog:v1.3.7'
+    /* slider */
+    compile "com.android.support:support-v4:+"
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    /* Picker选择器 */
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+    /* dialogs */
+    compile 'com.afollestad.material-dialogs:core:0.9.5.0'
+    /* fresco */
+    compile 'com.facebook.fresco:fresco:1.5.0'
+    compile 'com.facebook.fresco:imagepipeline-okhttp:0.6.0+'
+    /* 图片选择 */
+    compile 'com.lzy.widget:imagepicker:0.6.1'
+    /* Indicator指示器 */
+    compile 'com.github.hackware1993:MagicIndicator:1.5.0'
+    /* 二维码扫描 */
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.9'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.9'
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_dialog"
+        android:text="普通弹窗"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_inp_dialog"
+        android:text="输入框弹窗"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_list_dialog"
+        android:text="列表弹窗"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_pro_dialog"
+        android:text="进度条弹窗"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_radio_dialog"
+        android:text="单选弹窗"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_checkbox_dialog"
+        android:text="多选弹窗"
+        style="@style/bt_ordinary"/>
+
+</LinearLayout>
