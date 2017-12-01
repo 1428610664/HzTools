@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import hz.com.hztools.R;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
@@ -31,14 +31,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button imagepicker = (Button) findViewById(R.id.bt_imagepicker);
         imagepicker.setOnClickListener(this);
 
+        Button code = (Button) findViewById(R.id.bt_code);
+        code.setOnClickListener(this);
 
-         Button indicator = (Button) findViewById(R.id.bt_indicator);
-        indicator.setOnClickListener(this);
+        Button refresh = (Button) findViewById(R.id.bt_refresh);
+        refresh.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.bt_IndicatorDialog:
                 startActivity(new Intent(getApplicationContext(), IndicatorDialogActicity.class));
                 break;
@@ -56,6 +58,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.bt_indicator:
                 startActivity(new Intent(getApplicationContext(), IndicatorActivity.class));
+                break;
+            case R.id.bt_code:
+                startActivity(new Intent(getApplicationContext(), ZxingCodeActivity.class));
+                break;
+            case R.id.bt_refresh:
+                startActivity(new Intent(getApplicationContext(), ZxingCodeActivity.class));
                 break;
         }
     }

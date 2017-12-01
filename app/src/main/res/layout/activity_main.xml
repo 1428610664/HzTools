@@ -40,5 +40,9 @@
         android:id="@+id/bt_code"
         android:text="@string/code"
         style="@style/bt_ordinary"/>
+    <Button
+        android:id="@+id/bt_refresh"
+        android:text="@string/refresh"
+        style="@style/bt_ordinary"/>
 
 </LinearLayout>

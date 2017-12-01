@@ -11,4 +11,5 @@
     <string name="city">城市三级联动</string>
     <string name="indicator">指示器</string>
     <string name="code">二维码扫描</string>
+    <string name="refresh">上拉加载下拉刷新</string>
 </resources>

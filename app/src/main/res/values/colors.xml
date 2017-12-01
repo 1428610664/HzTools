@@ -4,6 +4,13 @@
     <color name="colorPrimaryDark">#eb4f38</color>
     <color name="white">#ffffff</color>
 
+    <color name="colorPrimaryDarkTrans">#CCf57257</color>
     <color name="colorAccent">#FF4081</color>
     <color name="_f9f9f9">#F9F9F9</color>
+
+
+    <color name="test_spacing1">#9674FC</color>
+    <color name="test_spacing2">#179641</color>
+    <color name="test_spacing3">#B2DB4D</color>
+    <color name="test_spacing4">#50E746</color>
 </resources>

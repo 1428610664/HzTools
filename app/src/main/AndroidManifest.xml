@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--android.permission.VIBRATE允许访问震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--android.permission.FLASHLIGHT允许访问闪光灯的权限-->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".HzApplication"
@@ -26,7 +31,7 @@
         <activity android:name=".acticity.DialogsActivity"/>
         <activity android:name=".acticity.ImaPickerActivity"/>
         <activity android:name=".acticity.IndicatorActivity"/>
-
+        <activity android:name=".acticity.ZxingCodeActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

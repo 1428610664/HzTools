@@ -52,6 +52,8 @@ dependencies {
     compile 'com.github.hackware1993:MagicIndicator:1.5.0'
     /* 二维码扫描 */
     compile 'com.google.zxing:core:3.3.0'
-    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.9'
-    compile 'cn.bingoogolapple:bga-zxing:1.1.9'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
+    /* 上拉加载下拉刷新 */
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
 }
