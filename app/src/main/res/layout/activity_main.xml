@@ -6,43 +6,65 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
     <Button
         android:id="@+id/bt_IndicatorDialog"
         android:text="@string/popup"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
     <Button
         android:id="@+id/bt_slider"
         android:text="@string/slider"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
     <Button
         android:id="@+id/bt_picker"
         android:text="@string/picker"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
     <Button
         android:id="@+id/bt_dialogs"
         android:text="@string/dialogs"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
     <Button
         android:id="@+id/bt_imagepicker"
         android:text="@string/imagepicker"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
     <Button
         android:id="@+id/bt_indicator"
         android:text="@string/indicator"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
     <Button
         android:id="@+id/bt_code"
         android:text="@string/code"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
+
     <Button
         android:id="@+id/bt_refresh"
         android:text="@string/refresh"
+        android:onClick="onClick"
+        style="@style/bt_ordinary"/>
+
+    <Button
+        android:id="@+id/bt_dragView"
+        android:text="@string/dragView"
+        android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
 </LinearLayout>

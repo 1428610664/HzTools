@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hz.com.hztools.widget.CustomRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <!--顶部导航栏布局-->
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/bar_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="bottom">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp">
+
+                <ImageView
+                    android:id="@+id/top_bar_icon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_avatar_white"
+                    />
+
+                <TextView
+                    android:id="@+id/top_bar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+                <!--搜索图标-->
+                <Button
+                    android:id="@+id/top_bar_search_btn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/btn_serach_selector"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--中间内容后面放入Fragment-->
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="中间部分"/>
+            <!--<fragment
+                android:id="@+id/main_info_fragment"
+                class="com.cniao5.app36kr_cnk.fragment.MainInfoFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>-->
+        </FrameLayout>
+    </LinearLayout>
+
+</hz.com.hztools.widget.CustomRelativeLayout>

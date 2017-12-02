@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hz.com.hztools.widget.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                  android:id="@+id/drag_layout"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:background="@mipmap/head_bg">
+
+    <!--1.底部功能(左侧侧滑功能布局)-->
+    <include layout="@layout/left_view_layout"/>
+
+    <!-- 主页面 -->
+    <include layout="@layout/main_view_layout"/>
+
+</hz.com.hztools.widget.DragLayout>
