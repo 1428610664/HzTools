@@ -6,7 +6,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import hz.com.hztools.HzApplication;
+import hz.com.hztools.Application.HzApplication;
 
 /**
  * Created by pursuit on 2017/11/18.

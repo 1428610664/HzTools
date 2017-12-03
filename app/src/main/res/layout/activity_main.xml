@@ -67,4 +67,10 @@
         android:onClick="onClick"
         style="@style/bt_ordinary"/>
 
+    <Button
+        android:id="@+id/bt_pullZoom"
+        android:text="@string/pullZoom"
+        android:onClick="onClick"
+        style="@style/bt_ordinary"/>
+
 </LinearLayout>

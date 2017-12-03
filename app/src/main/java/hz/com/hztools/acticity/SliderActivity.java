@@ -41,18 +41,18 @@ public class SliderActivity extends AppCompatActivity {
         mtDefaultSlider.addSlider(defaultSliderView1);
 
         DefaultSliderView defaultSliderView2 = new DefaultSliderView(getApplicationContext());
-        defaultSliderView1.image(R.mipmap.slider2);
-        defaultSliderView1.setScaleType(BaseSliderView.ScaleType.Fit);
+        defaultSliderView2.image(R.mipmap.slider2);
+        defaultSliderView2.setScaleType(BaseSliderView.ScaleType.Fit);
         mtDefaultSlider.addSlider(defaultSliderView2);
 
         DefaultSliderView defaultSliderView3 = new DefaultSliderView(getApplicationContext());
-        defaultSliderView1.image(R.mipmap.slider3);
-        defaultSliderView1.setScaleType(BaseSliderView.ScaleType.Fit);
+        defaultSliderView3.image(R.mipmap.slider3);
+        defaultSliderView3.setScaleType(BaseSliderView.ScaleType.Fit);
         mtDefaultSlider.addSlider(defaultSliderView3);
 
         DefaultSliderView defaultSliderView4 = new DefaultSliderView(getApplicationContext());
-        defaultSliderView1.image(R.mipmap.slider4);
-        defaultSliderView1.setScaleType(BaseSliderView.ScaleType.Fit);
+        defaultSliderView4.image(R.mipmap.slider4);
+        defaultSliderView4.setScaleType(BaseSliderView.ScaleType.Fit);
         mtDefaultSlider.addSlider(defaultSliderView4);
 
         mtDefaultSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
@@ -71,21 +71,21 @@ public class SliderActivity extends AppCompatActivity {
         mTextSlider.addSlider(textSliderView);
 
         TextSliderView textSliderView2 = new TextSliderView(getApplicationContext());
-        textSliderView.image(R.mipmap.slider2);
-        textSliderView.description("标题2");
-        textSliderView.setScaleType(BaseSliderView.ScaleType.Fit);
+        textSliderView2.image(R.mipmap.slider2);
+        textSliderView2.description("标题2");
+        textSliderView2.setScaleType(BaseSliderView.ScaleType.Fit);
         mTextSlider.addSlider(textSliderView2);
 
         TextSliderView textSliderView3 = new TextSliderView(getApplicationContext());
-        textSliderView.image(R.mipmap.slider3);
-        textSliderView.description("标题3");
-        textSliderView.setScaleType(BaseSliderView.ScaleType.Fit);
+        textSliderView3.image(R.mipmap.slider3);
+        textSliderView3.description("标题3");
+        textSliderView3.setScaleType(BaseSliderView.ScaleType.Fit);
         mTextSlider.addSlider(textSliderView3);
 
         TextSliderView textSliderView4 = new TextSliderView(getApplicationContext());
-        textSliderView.image(R.mipmap.slider4);
-        textSliderView.description("标题4");
-        textSliderView.setScaleType(BaseSliderView.ScaleType.Fit);
+        textSliderView4.image(R.mipmap.slider4);
+        textSliderView4.description("标题4");
+        textSliderView4.setScaleType(BaseSliderView.ScaleType.Fit);
         mTextSlider.addSlider(textSliderView4);
 
         mTextSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);

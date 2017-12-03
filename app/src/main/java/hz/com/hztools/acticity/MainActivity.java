@@ -51,6 +51,9 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_dragView:
                 openActivity(DragActivity.class);
                 break;
+            case R.id.bt_pullZoom:
+                openActivity(PullZoomActivity.class);
+                break;
         }
     }
 

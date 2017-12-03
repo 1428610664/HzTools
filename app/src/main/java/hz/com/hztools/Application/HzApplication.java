@@ -1,4 +1,4 @@
-package hz.com.hztools;
+package hz.com.hztools.Application;
 
 import android.app.Application;
 import android.content.Context;
@@ -22,7 +22,6 @@ public class HzApplication extends Application {
         super.onCreate();
 
         mContext = getApplicationContext();
-
         // 初始化
         Fresco.initialize(this);
         initSelectImage();

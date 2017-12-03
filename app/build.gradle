@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -56,4 +57,6 @@ dependencies {
     compile 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
     /* 上拉加载下拉刷新 */
     compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'
+    /* 图片弹性拉伸*/
+    compile 'com.github.frank-zhu:pullzoomview:1.0.0'
 }

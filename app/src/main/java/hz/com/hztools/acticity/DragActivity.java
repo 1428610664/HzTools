@@ -6,7 +6,6 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.nineoldandroids.view.ViewHelper;
 
@@ -82,24 +81,12 @@ public class DragActivity extends BaseActivity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
-            
-        }
-        Toast.makeText(this, "是否打开："+drag_layout.isDrag(), Toast.LENGTH_SHORT).show();
-        return false;
-        /*if (keyCode == KeyEvent.KEYCODE_BACK) {
-            Toast.makeText(this, "是否打开："+drag_layout.isDrag(), Toast.LENGTH_SHORT).show();
-            if(drag_layout.isDrag()){
+            if(drag_layout.getStatus() == DragLayout.Status.Open){
                 drag_layout.close();
                 return false;
             }
-        }*/
-        //return super.onKeyDown(keyCode, event);
-    }
-
-    @Override
-    public void onBackPressed() {
-        Toast.makeText(this, "是否11打开："+drag_layout.isDrag(), Toast.LENGTH_SHORT).show();
-        super.onBackPressed();
+        }
+        return super.onKeyDown(keyCode, event);
     }
 
 }
