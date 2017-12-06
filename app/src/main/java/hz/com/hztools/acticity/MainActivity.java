@@ -54,6 +54,12 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_pullZoom:
                 openActivity(PullZoomActivity.class);
                 break;
+            case R.id.bt_dialogplus:
+                openActivity(DialogplusActivity.class);
+                break;
+            case R.id.bt_tags:
+                openActivity(FlowActivity.class);
+                break;
         }
     }
 

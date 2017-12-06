@@ -41,6 +41,8 @@
         <activity android:name=".acticity.ZxingCodeActivity"/>
         <activity android:name=".acticity.DragActivity"/>
         <activity android:name=".acticity.PullZoomActivity"/>
+        <activity android:name=".acticity.DialogplusActivity"/>
+        <activity android:name=".acticity.FlowActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
