@@ -43,6 +43,11 @@
         <activity android:name=".acticity.PullZoomActivity"/>
         <activity android:name=".acticity.DialogplusActivity"/>
         <activity android:name=".acticity.FlowActivity"/>
+        <activity android:name=".acticity.PhonViewActivity"/>
+        <activity android:name=".acticity.EditTextActivity"/>
+        <activity android:name=".acticity.AutofitTextViewActivity"/>
+        <activity android:name=".acticity.WeChatActivity"/>
+        <activity android:name=".acticity.SwipeDelMenuActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

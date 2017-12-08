@@ -60,6 +60,21 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_tags:
                 openActivity(FlowActivity.class);
                 break;
+            case R.id.bt_photoView:
+                openActivity(PhonViewActivity.class);
+                break;
+            case R.id.bt_edittext:
+                openActivity(EditTextActivity.class);
+                break;
+            case R.id.bt_autoText:
+                openActivity(AutofitTextViewActivity.class);
+                break;
+            case R.id.bt_wechat:
+                openActivity(WeChatActivity.class);
+                break;
+            case R.id.bt_swipeMenu:
+                openActivity(SwipeDelMenuActivity.class);
+                break;
         }
     }
 

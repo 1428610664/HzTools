@@ -42,4 +42,10 @@
     <string name="show_header">Show header</string>
     <string name="show_footer">Show footer</string>
     <string name="Tags">分类标签</string>
+    <string name="photoView">图片预览</string>
+    <string name="edittext">输入框校验</string>
+    <string name="autoText">A TextView that automatically resizes text to fit perfectly within its bounds.</string>
+    <string name="autofitText">自动吻合Text</string>
+    <string name="wechat">微信通讯录</string>
+    <string name="swipeMenu">高仿QQ侧滑菜单</string>
 </resources>

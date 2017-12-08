@@ -18,4 +18,6 @@
     <color name="primary">#eb4f38</color>
     <color name="secondary">#eb4f38</color>
     <color name="overlay_light">#F8F8F8</color>
+
+    <color name="partTranslucent">#39000000</color>
 </resources>

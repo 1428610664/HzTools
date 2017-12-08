@@ -1,94 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/activity_main"
+        android:id="@+id/bar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
         <LinearLayout
-            android:id="@+id/bar_layout"
+            android:id="@+id/activity_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"/>
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/bt_IndicatorDialog"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/popup"/>
 
-        <Button
-            android:id="@+id/bt_slider"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/slider"/>
+            <Button
+                android:id="@+id/bt_IndicatorDialog"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/popup"/>
 
-        <Button
-            android:id="@+id/bt_picker"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/picker"/>
+            <Button
+                android:id="@+id/bt_slider"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/slider"/>
 
-        <Button
-            android:id="@+id/bt_dialogs"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/dialogs"/>
+            <Button
+                android:id="@+id/bt_picker"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/picker"/>
 
-        <Button
-            android:id="@+id/bt_imagepicker"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/imagepicker"/>
+            <Button
+                android:id="@+id/bt_dialogs"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/dialogs"/>
 
-        <Button
-            android:id="@+id/bt_indicator"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/indicator"/>
+            <Button
+                android:id="@+id/bt_imagepicker"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/imagepicker"/>
 
-        <Button
-            android:id="@+id/bt_code"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/code"/>
+            <Button
+                android:id="@+id/bt_indicator"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/indicator"/>
 
-        <Button
-            android:id="@+id/bt_refresh"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/refresh"/>
+            <Button
+                android:id="@+id/bt_code"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/code"/>
 
-        <Button
-            android:id="@+id/bt_dragView"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/dragView"/>
+            <Button
+                android:id="@+id/bt_refresh"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/refresh"/>
 
-        <Button
-            android:id="@+id/bt_pullZoom"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/pullZoom"/>
+            <Button
+                android:id="@+id/bt_dragView"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/dragView"/>
 
-        <Button
-            android:id="@+id/bt_dialogplus"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/dialogplus"/>
+            <Button
+                android:id="@+id/bt_pullZoom"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/pullZoom"/>
 
-        <Button
-            android:id="@+id/bt_tags"
-            style="@style/bt_ordinary"
-            android:onClick="onClick"
-            android:text="@string/Tags"/>
+            <Button
+                android:id="@+id/bt_dialogplus"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/dialogplus"/>
 
-    </LinearLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/bt_tags"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/Tags"/>
+
+            <Button
+                android:id="@+id/bt_photoView"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/photoView"/>
+
+            <Button
+                android:id="@+id/bt_edittext"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/edittext"/>
+
+            <Button
+                android:id="@+id/bt_autoText"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/autofitText"/>
+
+            <Button
+                android:id="@+id/bt_wechat"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/wechat"/>
+
+            <Button
+                android:id="@+id/bt_swipeMenu"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/swipeMenu"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
