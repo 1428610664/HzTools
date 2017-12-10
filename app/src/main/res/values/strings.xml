@@ -48,4 +48,6 @@
     <string name="autofitText">自动吻合Text</string>
     <string name="wechat">微信通讯录</string>
     <string name="swipeMenu">高仿QQ侧滑菜单</string>
+    <string name="danmu">弹幕</string>
+    <string name="indexText">缩进标题</string>
 </resources>

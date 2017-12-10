@@ -48,6 +48,8 @@
         <activity android:name=".acticity.AutofitTextViewActivity"/>
         <activity android:name=".acticity.WeChatActivity"/>
         <activity android:name=".acticity.SwipeDelMenuActivity"/>
+        <activity android:name=".acticity.DanmuActivity"/>
+        <activity android:name=".acticity.IndentTextActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

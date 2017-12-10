@@ -125,6 +125,18 @@
                 android:onClick="onClick"
                 android:text="@string/swipeMenu"/>
 
+            <Button
+                android:id="@+id/bt_danmu"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/danmu"/>
+
+            <Button
+                android:id="@+id/bt_indexText"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/indexText"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

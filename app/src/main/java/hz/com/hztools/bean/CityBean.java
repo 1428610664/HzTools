@@ -1,4 +1,4 @@
-package hz.com.hztools.Base;
+package hz.com.hztools.bean;
 
 import com.mcxtzhang.indexlib.IndexBar.bean.BaseIndexPinyinBean;
 

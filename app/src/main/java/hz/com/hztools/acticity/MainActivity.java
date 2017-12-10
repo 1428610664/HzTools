@@ -75,6 +75,12 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_swipeMenu:
                 openActivity(SwipeDelMenuActivity.class);
                 break;
+            case R.id.bt_danmu:
+                openActivity(DanmuActivity.class);
+                break;
+            case R.id.bt_indexText:
+                openActivity(IndentTextActivity.class);
+                break;
         }
     }
 

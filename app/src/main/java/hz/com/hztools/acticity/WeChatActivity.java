@@ -16,8 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import hz.com.hztools.Adapter.CityAdapter;
-import hz.com.hztools.Base.CityBean;
 import hz.com.hztools.R;
+import hz.com.hztools.bean.CityBean;
 import hz.com.hztools.widget.DividerItemDecoration;
 
 /**
@@ -81,9 +81,9 @@ public class WeChatActivity extends AppCompatActivity {
      */
     private void initDatas(final String[] data) {
         //延迟两秒 模拟加载数据中....
-        getWindow().getDecorView().postDelayed(new Runnable() {
-            @Override
-            public void run() {
+        //getWindow().getDecorView().postDelayed(new Runnable() {
+            //@Override
+            //public void run() {
                 mDatas = new ArrayList<>();
                 //微信的头部 也是可以右侧IndexBar导航索引的，
                 // 但是它不需要被ItemDecoration设一个标题titile
@@ -102,8 +102,8 @@ public class WeChatActivity extends AppCompatActivity {
                 mIndexBar.setmSourceDatas(mDatas)//设置数据
                         .invalidate();
                 mDecoration.setmDatas(mDatas);
-            }
-        }, 500);
+           // }
+        //}, 500);
     }
 
     /**

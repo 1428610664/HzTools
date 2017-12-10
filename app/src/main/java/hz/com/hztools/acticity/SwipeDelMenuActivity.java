@@ -17,6 +17,7 @@ import java.util.List;
 import hz.com.hztools.Adapter.FullDelDemoAdapter;
 import hz.com.hztools.R;
 import hz.com.hztools.bean.SwipeBean;
+import hz.com.hztools.widget.DividerItemDecoration;
 
 
 /**
@@ -70,6 +71,7 @@ public class SwipeDelMenuActivity extends AppCompatActivity {
         });
         mRv.setAdapter(mAdapter);
 //        mRv.setLayoutManager(mLayoutManager = new GridLayoutManager(this, 2));
+        mRv.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.HORIZONTAL_LIST));
         mRv.setLayoutManager(mLayoutManager = new LinearLayoutManager(this));
 
         //6 2016 10 21 add , 增加viewChache 的 get()方法，

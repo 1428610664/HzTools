@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
-import hz.com.hztools.Base.CityBean;
+import hz.com.hztools.bean.CityBean;
 import hz.com.hztools.R;
 
 /**
