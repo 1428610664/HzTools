@@ -137,6 +137,24 @@
                 android:onClick="onClick"
                 android:text="@string/indexText"/>
 
+            <Button
+                android:id="@+id/bt_recycler"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/recycler"/>
+
+            <Button
+                android:id="@+id/bt_okgo"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/okgo"/>
+
+            <Button
+                android:id="@+id/bt_autolayout"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/autolayout"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

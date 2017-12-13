@@ -81,6 +81,15 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_indexText:
                 openActivity(IndentTextActivity.class);
                 break;
+            case R.id.bt_recycler:
+                openActivity(RecyclerViewActivity.class);
+                break;
+            case R.id.bt_okgo:
+                openActivity(OkgoActivity.class);
+                break;
+            case R.id.bt_autolayout:
+                openActivity(AutoLayoutActivity.class);
+                break;
         }
     }
 

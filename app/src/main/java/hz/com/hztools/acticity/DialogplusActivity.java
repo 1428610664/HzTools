@@ -84,32 +84,6 @@ public class DialogplusActivity extends AppCompatActivity {
                 );
             }
         });
-
-       /* View contentView = getLayoutInflater().inflate(R.layout.content2, null);
-        DialogPlus dialogPlus = DialogPlus.newDialog(this)
-                .setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, new String[]{"asdfa"}))
-                .setCancelable(true)
-                .setOnDismissListener(new OnDismissListener() {
-                    @Override
-                    public void onDismiss(DialogPlus dialog) {
-
-                    }
-                })
-                .setOnCancelListener(new OnCancelListener() {
-                    @Override
-                    public void onCancel(DialogPlus dialog) {
-
-                    }
-                })
-                .setOnBackPressListener(new OnBackPressListener() {
-                    @Override
-                    public void onBackPressed(DialogPlus dialogPlus) {
-
-                    }
-                })
-                .create();
-
-        dialogPlus.show();*/
     }
 
     private void showDialog(int holderId, int gravity, boolean showHeader, boolean showFooter, boolean expanded) {
@@ -132,24 +106,7 @@ public class DialogplusActivity extends AppCompatActivity {
         OnClickListener clickListener = new OnClickListener() {
             @Override
             public void onClick(DialogPlus dialog, View view) {
-                //        switch (view.getId()) {
-                //          case R.id.header_container:
-                //            Toast.makeText(MainActivity.this, "Header clicked", Toast.LENGTH_LONG).show();
-                //            break;
-                //          case R.id.like_it_button:
-                //            Toast.makeText(MainActivity.this, "We're glad that you like it", Toast.LENGTH_LONG).show();
-                //            break;
-                //          case R.id.love_it_button:
-                //            Toast.makeText(MainActivity.this, "We're glad that you love it", Toast.LENGTH_LONG).show();
-                //            break;
-                //          case R.id.footer_confirm_button:
-                //            Toast.makeText(MainActivity.this, "Confirm button clicked", Toast.LENGTH_LONG).show();
-                //            break;
-                //          case R.id.footer_close_button:
-                //            Toast.makeText(MainActivity.this, "Close button clicked", Toast.LENGTH_LONG).show();
-                //            break;
-                //        }
-                //        dialog.dismiss();
+
             }
         };
 
@@ -158,7 +115,6 @@ public class DialogplusActivity extends AppCompatActivity {
             public void onItemClick(DialogPlus dialog, Object item, View view, int position) {
                 TextView textView = (TextView) view.findViewById(R.id.text_view);
                 String clickedAppName = textView.getText().toString();
-                //        dialog.dismiss();
                 //        Toast.makeText(MainActivity.this, clickedAppName + " clicked", Toast.LENGTH_LONG).show();
             }
         };

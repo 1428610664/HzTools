@@ -4,7 +4,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 
 import java.util.List;
 
@@ -18,6 +19,8 @@ import hz.com.hztools.widget.HZDanmuView;
 public class DanmuActivity extends AppCompatActivity {
 
     private HZDanmuView mDanmuView;
+    private Switch mSwitch;
+
     private List<View> mViewList;
     private String[] mStrItems = {
             "搜狗","百度",
@@ -41,6 +44,17 @@ public class DanmuActivity extends AppCompatActivity {
     }
 
     private void initListener() {
+        ((Switch)findViewById(R.id.sw_switch)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    mDanmuView.start();
+                }else{
+                    mDanmuView.hide();
+                }
+            }
+        });
+        /*
         findViewById(R.id.btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,7 +66,7 @@ public class DanmuActivity extends AppCompatActivity {
                     ((Button) view).setText("关闭");
                 }
             }
-        });
+        });*/
     }
 
     private void initDanmuView() {

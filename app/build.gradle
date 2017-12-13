@@ -82,4 +82,8 @@ dependencies {
     compile 'com.github.mcxtzhang:SuspensionIndexBar:V1.0.0'
     /* 侧滑菜单，仿QQ */
     compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    /* 网络 */
+    compile 'com.lzy.net:okgo:3.0.4'
+    /* 屏幕适配 */
+    compile 'com.zhy:autolayout:1.4.5'
 }

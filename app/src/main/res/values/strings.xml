@@ -50,4 +50,7 @@
     <string name="swipeMenu">高仿QQ侧滑菜单</string>
     <string name="danmu">弹幕</string>
     <string name="indexText">缩进标题</string>
+    <string name="recycler">recycler头部底部</string>
+    <string name="okgo">网络请求</string>
+    <string name="autolayout">屏幕适配</string>
 </resources>

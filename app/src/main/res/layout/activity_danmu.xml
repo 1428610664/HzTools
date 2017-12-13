@@ -21,7 +21,19 @@
             android:text="弹幕效果"
             />
 
-        <Button
+        <Switch
+            android:id="@+id/sw_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:switchMinWidth="20dp"
+            android:textOn=""
+            android:textOff=""
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track" />
+
+        <!--<Button
             android:id="@+id/btn"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
@@ -29,7 +41,7 @@
             android:onClick="updateDatas"
             android:background="@android:color/transparent"
             android:textSize="14sp"
-            android:text="开启"/>
+            android:text="开启"/>-->
 
     </RelativeLayout>
 
