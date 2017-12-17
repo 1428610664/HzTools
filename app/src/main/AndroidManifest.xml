@@ -53,6 +53,9 @@
         <activity android:name=".acticity.RecyclerViewActivity"/>
         <activity android:name=".acticity.OkgoActivity"/>
         <activity android:name=".acticity.AutoLayoutActivity"/>
+        <activity android:name=".acticity.IconfontActivity"/>
+        <activity android:name=".acticity.LoaddingActivity"/>
+        <activity android:name=".acticity.ViewpagerActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

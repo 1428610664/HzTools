@@ -10,7 +10,9 @@ import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
 
+import hz.com.hztools.R;
 import hz.com.hztools.utils.PicassoImageLoader;
+import hz.com.hztools.widget.LoadingAndRetryManager;
 import okhttp3.OkHttpClient;
 
 /**
@@ -32,6 +34,11 @@ public class HzApplication extends Application {
 
         // 初始化网络
         initOKgo();
+
+        // 初始化加载（loading）、重试(retry)和无数据（empty）页面
+        LoadingAndRetryManager.BASE_RETRY_LAYOUT_ID = R.layout.base_retry;
+        LoadingAndRetryManager.BASE_LOADING_LAYOUT_ID = R.layout.base_loading;
+        LoadingAndRetryManager.BASE_EMPTY_LAYOUT_ID = R.layout.base_empty;
 
     }
 

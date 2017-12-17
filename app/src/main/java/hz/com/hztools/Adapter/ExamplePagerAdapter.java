@@ -47,7 +47,7 @@ public class ExamplePagerAdapter extends PagerAdapter {
         TextView textView = (TextView) object;
         String text = textView.getText().toString();
         int index = mDataList.indexOf(text);
-        if (index >= 0) {
+        if (index >= 0){
             return index;
         }
         return POSITION_NONE;

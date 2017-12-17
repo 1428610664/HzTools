@@ -155,6 +155,24 @@
                 android:onClick="onClick"
                 android:text="@string/autolayout"/>
 
+            <Button
+                android:id="@+id/bt_iconfont"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/iconfont"/>
+
+            <Button
+                android:id="@+id/bt_loadding"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/loadding"/>
+
+            <Button
+                android:id="@+id/bt_viewpager"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/viewpager"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

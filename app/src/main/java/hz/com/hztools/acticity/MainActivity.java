@@ -90,6 +90,15 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_autolayout:
                 openActivity(AutoLayoutActivity.class);
                 break;
+            case R.id.bt_iconfont:
+                openActivity(IconfontActivity.class);
+                break;
+            case R.id.bt_loadding:
+                openActivity(LoaddingActivity.class);
+                break;
+            case R.id.bt_viewpager:
+                openActivity(ViewpagerActivity.class);
+                break;
         }
     }
 

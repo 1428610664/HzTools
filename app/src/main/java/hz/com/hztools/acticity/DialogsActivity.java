@@ -163,6 +163,7 @@ public class DialogsActivity extends AppCompatActivity implements View.OnClickLi
                 .titleColor(Color.parseColor("#000000"))
                 .contentColor(Color.parseColor("#000000"))
                 .progress(true, 0)
+                .progressIndeterminateStyle(true)
                 .show();
     }
 
