@@ -58,4 +58,5 @@
     <string name="icons">&#xe692;&#xe693;&#xe694;&#xe695;&#xe6b0;&#xe6b1;&#xe6b2;&#xe6b3;&#xe6b5;&#xe6b6;</string>
     <string name="loadding">加载、重试和无数据</string>
     <string name="viewpager">view pager</string>
+    <string name="numberprogressbar">数字进度条</string>
 </resources>

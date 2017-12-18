@@ -56,6 +56,7 @@
         <activity android:name=".acticity.IconfontActivity"/>
         <activity android:name=".acticity.LoaddingActivity"/>
         <activity android:name=".acticity.ViewpagerActivity"/>
+        <activity android:name=".acticity.NumberProgressbarActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

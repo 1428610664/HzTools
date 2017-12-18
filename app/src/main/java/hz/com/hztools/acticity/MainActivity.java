@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import hz.com.hztools.R;
 import hz.com.hztools.acticity.Base.BaseActivity;
+import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class MainActivity extends BaseActivity {
 
@@ -20,6 +21,13 @@ public class MainActivity extends BaseActivity {
         setStatusBar();
         LinearLayout linear_bar = (LinearLayout) findViewById(R.id.bar_layout);
         linear_bar.setBackgroundResource(R.color.colorPrimary);
+
+        // 设置logo数字
+        initShortcutBadger();
+    }
+
+    private void initShortcutBadger() {
+        ShortcutBadger.applyCount(this, 99);
     }
 
     public void onClick(View v) {
@@ -98,6 +106,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.bt_viewpager:
                 openActivity(ViewpagerActivity.class);
+                break;
+            case R.id.bt_numberprogressbar:
+                openActivity(NumberProgressbarActivity.class);
                 break;
         }
     }

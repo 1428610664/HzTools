@@ -173,6 +173,12 @@
                 android:onClick="onClick"
                 android:text="@string/viewpager"/>
 
+            <Button
+                android:id="@+id/bt_numberprogressbar"
+                style="@style/bt_ordinary"
+                android:onClick="onClick"
+                android:text="@string/numberprogressbar"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -2,40 +2,91 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:paddingLeft="10dp"
         android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
         android:text="okhttp-OkGo"
         android:textColor="@color/white"
-        android:textSize="16sp"
-        android:gravity="center_vertical"/>
+        android:textSize="16sp"/>
 
-    <hz.com.hztools.widget.HZIndentTextView
-        android:id="@+id/textView"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <com.daimajia.numberprogressbar.NumberProgressBar
+                android:id="@+id/numberbar"
+                style="@style/NumberProgressBar_Warning_Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/selPath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="14sp"
+                android:text="选择图片："
+                android:visibility="gone"/>
+
+            <hz.com.hztools.widget.HZIndentTextView
+                android:id="@+id/requestStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <hz.com.hztools.widget.HZIndentTextView
+                android:id="@+id/requestHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <hz.com.hztools.widget.HZIndentTextView
+                android:id="@+id/responseData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <hz.com.hztools.widget.HZIndentTextView
+                android:id="@+id/responseHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@color/colorPrimary">
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_bg"
+            android:gravity="center"
             android:onClick="get"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/selector_bt_bg"
             android:text="Get"
-            android:id="@+id/textView4"/>
+            android:textColor="@color/white"/>
 
         <View
             android:layout_width="0.5dp"
@@ -44,32 +95,15 @@
             android:background="#ccc"/>
 
         <TextView
-            android:onClick="update"
+            android:id="@+id/textView2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:textColor="@color/white"
-            android:gravity="center"
             android:layout_weight="1"
             android:background="@drawable/selector_bt_bg"
-            android:text="上传"
-            android:id="@+id/textView3"/>
-
-        <TextView
+            android:gravity="center"
             android:onClick="post"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:textColor="@color/white"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:background="@drawable/selector_bt_bg"
             android:text="Post"
-            android:id="@+id/textView2"/>
-
-        <View
-            android:layout_width="0.5dp"
-            android:layout_height="20dp"
-            android:layout_gravity="center"
-            android:background="#ccc"/>
+            android:textColor="@color/white"/>
 
         <View
             android:layout_width="0.5dp"
@@ -78,14 +112,31 @@
             android:background="#ccc"/>
 
         <TextView
-            android:onClick="downloader"
+            android:id="@+id/textView3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:textColor="@color/white"
-            android:gravity="center"
             android:layout_weight="1"
             android:background="@drawable/selector_bt_bg"
-            android:text="下载"/>
+            android:gravity="center"
+            android:onClick="update"
+            android:text="上传"
+            android:textColor="@color/white"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="#ccc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bt_bg"
+            android:gravity="center"
+            android:onClick="downloader"
+            android:text="下载"
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
