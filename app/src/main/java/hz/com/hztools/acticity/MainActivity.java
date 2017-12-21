@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.tapadoo.alerter.Alerter;
+
 import hz.com.hztools.R;
 import hz.com.hztools.acticity.Base.BaseActivity;
 import me.leolin.shortcutbadger.ShortcutBadger;
@@ -54,7 +56,10 @@ public class MainActivity extends BaseActivity {
                 openActivity(ZxingCodeActivity.class);
                 break;
             case R.id.bt_refresh:
-                openActivity(ZxingCodeActivity.class);
+                openActivity(SmartRefreshActivity.class);
+                break;
+            case R.id.bt_refresh2:
+                openActivity(SmartRefreshActivity2.class);
                 break;
             case R.id.bt_dragView:
                 openActivity(DragActivity.class);
@@ -110,7 +115,34 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_numberprogressbar:
                 openActivity(NumberProgressbarActivity.class);
                 break;
+            case R.id.bt_jsbridge:
+                openActivity(JsbridgeActivity.class);
+                break;
+            case R.id.bt_animation:
+                openActivity(AnimationActivity.class);
+                break;
         }
+    }
+
+    public void alert(View v){
+        Alerter.create(this)
+                .setTitle("Alert Title")
+                .setText("Alert text...")
+                .setDuration(2000)
+                .setIcon(R.drawable.ic_notifications)
+                .setBackgroundColorRes(R.color.primary)
+                .setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if(Alerter.isShowing()){
+                            Alerter.hide();
+                        }
+                        Toast.makeText(getApplication(), "OnClick Called", Toast.LENGTH_LONG).show();
+                    }
+                })
+                .show();
+        /*Alerter.isShowing();
+        Alerter.hide();*/
     }
 
     @Override

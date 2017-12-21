@@ -2,6 +2,8 @@ package hz.com.hztools.Application;
 
 import android.app.Application;
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatDelegate;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lzy.imagepicker.ImagePicker;
@@ -9,8 +11,14 @@ import com.lzy.imagepicker.view.CropImageView;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.DefaultRefreshHeaderCreater;
+import com.scwang.smartrefresh.layout.api.RefreshHeader;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 
 import hz.com.hztools.R;
+import hz.com.hztools.utils.DynamicTimeFormat;
 import hz.com.hztools.utils.PicassoImageLoader;
 import hz.com.hztools.widget.LoadingAndRetryManager;
 import okhttp3.OkHttpClient;
@@ -22,6 +30,18 @@ import okhttp3.OkHttpClient;
 public class HzApplication extends Application {
 
     private static Context mContext;
+
+    static {
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+        SmartRefreshLayout.setDefaultRefreshHeaderCreater(new DefaultRefreshHeaderCreater() {
+            @NonNull
+            @Override
+            public RefreshHeader createRefreshHeader(Context context, RefreshLayout layout) {
+                layout.setPrimaryColorsId(R.color.colorPrimary, android.R.color.white);//全局设置主题颜色
+                return new ClassicsHeader(context).setTimeFormat(new DynamicTimeFormat("更新于 %s"));
+            }
+        });
+    }
 
     @Override
     public void onCreate() {

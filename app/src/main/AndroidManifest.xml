@@ -39,6 +39,8 @@
         <activity android:name=".acticity.ImaPickerActivity"/>
         <activity android:name=".acticity.IndicatorActivity"/>
         <activity android:name=".acticity.ZxingCodeActivity"/>
+        <activity android:name=".acticity.SmartRefreshActivity"/>
+        <activity android:name=".acticity.SmartRefreshActivity2"/>
         <activity android:name=".acticity.DragActivity"/>
         <activity android:name=".acticity.PullZoomActivity"/>
         <activity android:name=".acticity.DialogplusActivity"/>
@@ -57,11 +59,14 @@
         <activity android:name=".acticity.LoaddingActivity"/>
         <activity android:name=".acticity.ViewpagerActivity"/>
         <activity android:name=".acticity.NumberProgressbarActivity"/>
+        <activity android:name=".acticity.JsbridgeActivity"/>
+        <activity android:name=".acticity.AnimationActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
 
+        <!-- 屏幕适配 -->
         <meta-data
             android:name="design_width"
             android:value="1080"/>

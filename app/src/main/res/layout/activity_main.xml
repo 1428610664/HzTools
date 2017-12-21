@@ -12,173 +12,533 @@
         android:orientation="vertical"
         android:visibility="gone"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"/>
+
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <LinearLayout
-            android:id="@+id/activity_main"
+        <com.zhy.autolayout.AutoLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/bt_IndicatorDialog"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/popup"/>
+                <TextView
+                    android:id="@+id/bt_IndicatorDialog"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/popup"
+                    />
 
-            <Button
-                android:id="@+id/bt_slider"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/slider"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_picker"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/picker"/>
+                <TextView
+                    android:id="@+id/bt_slider"
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/slider"/>
 
-            <Button
-                android:id="@+id/bt_dialogs"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/dialogs"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_imagepicker"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/imagepicker"/>
+                <TextView
+                    android:id="@+id/bt_picker"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/picker"/>
 
-            <Button
-                android:id="@+id/bt_indicator"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/indicator"/>
+            </com.zhy.autolayout.AutoLinearLayout>
 
-            <Button
-                android:id="@+id/bt_code"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/code"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_refresh"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/refresh"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/bt_dragView"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/dragView"/>
+                <TextView
+                    android:id="@+id/bt_dialogs"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/dialogs"
+                    />
 
-            <Button
-                android:id="@+id/bt_pullZoom"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/pullZoom"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_dialogplus"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/dialogplus"/>
+                <TextView
+                    android:id="@+id/bt_imagepicker"
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/imagepicker"/>
 
-            <Button
-                android:id="@+id/bt_tags"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/Tags"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_photoView"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/photoView"/>
+                <TextView
+                    android:id="@+id/bt_indicator"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/indicator"
+                    />
 
-            <Button
-                android:id="@+id/bt_edittext"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/edittext"/>
+            </com.zhy.autolayout.AutoLinearLayout>
 
-            <Button
-                android:id="@+id/bt_autoText"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/autofitText"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_wechat"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/wechat"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/bt_swipeMenu"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/swipeMenu"/>
+                <TextView
+                    android:id="@+id/bt_code"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/code"
+                    />
 
-            <Button
-                android:id="@+id/bt_danmu"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/danmu"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_indexText"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/indexText"/>
+                <TextView
+                    android:id="@+id/bt_refresh"
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/refresh"/>
 
-            <Button
-                android:id="@+id/bt_recycler"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/recycler"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_okgo"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/okgo"/>
+                <TextView
+                    android:id="@+id/bt_refresh2"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/refresh2"
+                    />
 
-            <Button
-                android:id="@+id/bt_autolayout"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/autolayout"/>
+            </com.zhy.autolayout.AutoLinearLayout>
 
-            <Button
-                android:id="@+id/bt_iconfont"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/iconfont"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
 
-            <Button
-                android:id="@+id/bt_loadding"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/loadding"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/bt_viewpager"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/viewpager"/>
+                <TextView
+                    android:id="@+id/bt_dragView"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/dragView"
+                    />
 
-            <Button
-                android:id="@+id/bt_numberprogressbar"
-                style="@style/bt_ordinary"
-                android:onClick="onClick"
-                android:text="@string/numberprogressbar"/>
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/bt_pullZoom"
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/pullZoom"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:id="@+id/bt_dialogplus"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/dialogplus"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_tags"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/Tags"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_photoView"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/photoView"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_edittext"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/edittext"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_autoText"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/autofitText"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_wechat"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/wechat"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_swipeMenu"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/swipeMenu"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_danmu"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/danmu"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_indexText"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/indexText"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_recycler"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/recycler"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_okgo"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/okgo"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_autolayout"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/autolayout"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_iconfont"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/iconfont"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_loadding"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/loadding"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_viewpager"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/viewpager"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_numberprogressbar"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/numberprogressbar"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_jsbridge"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/jsbridge"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_alert"
+                    android:onClick="alert"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/alert"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_animation"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/animation"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
     </ScrollView>
 </LinearLayout>

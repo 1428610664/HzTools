@@ -2,7 +2,7 @@
     <string name="app_name">HzTools</string>
 
 
-    <string name="popup">popup弹窗</string>
+    <string name="popup">popup</string>
     <string name="slider">轮播</string>
     <string name="picker">picker选择器</string>
     <string name="dialogs">弹窗</string>
@@ -11,7 +11,7 @@
     <string name="city">城市三级联动</string>
     <string name="indicator">指示器</string>
     <string name="code">二维码扫描</string>
-    <string name="refresh">上拉加载下拉刷新</string>
+    <string name="refresh">refresh</string>
     <string name="dragView">QQ5.0拖拽</string>
     <string name="pullZoom">弹性图片</string>
     <string name="dialogplus">工具弹窗</string>
@@ -47,16 +47,20 @@
     <string name="autoText">A TextView that automatically resizes text to fit perfectly within its bounds.</string>
     <string name="autofitText">自动吻合Text</string>
     <string name="wechat">微信通讯录</string>
-    <string name="swipeMenu">高仿QQ侧滑菜单</string>
+    <string name="swipeMenu">QQ侧滑菜单</string>
     <string name="danmu">弹幕</string>
     <string name="indexText">缩进标题</string>
-    <string name="recycler">recycler头部底部</string>
+    <string name="recycler">recycler</string>
     <string name="okgo">网络请求</string>
     <string name="autolayout">屏幕适配</string>
     <string name="iconfont">字体图标</string>
 
     <string name="icons">&#xe692;&#xe693;&#xe694;&#xe695;&#xe6b0;&#xe6b1;&#xe6b2;&#xe6b3;&#xe6b5;&#xe6b6;</string>
-    <string name="loadding">加载、重试和无数据</string>
+    <string name="loadding">load View</string>
     <string name="viewpager">view pager</string>
     <string name="numberprogressbar">数字进度条</string>
+    <string name="refresh2">弹性</string>
+    <string name="jsbridge"><![CDATA[JS <=> Android]]></string>
+    <string name="alert">alert弹窗</string>
+    <string name="animation">动画</string>
 </resources>
