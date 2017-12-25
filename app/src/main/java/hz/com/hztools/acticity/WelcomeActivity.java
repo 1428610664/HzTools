@@ -6,10 +6,12 @@ import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import hz.com.hztools.R;
 import hz.com.hztools.acticity.Base.BaseActivity;
@@ -21,15 +23,64 @@ import hz.com.hztools.widget.CustomVideoView;
 
 public class WelcomeActivity extends BaseActivity {
 
+    private TextView downTime;
     private Button welcome_button;
     private CustomVideoView welcome_videoview;
+
+    private CountDownTimer mTimer;
+    private int count = 5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        welcome_button=(Button)this.findViewById(R.id.welcome_button);
+
+        downTime = (TextView) findViewById(R.id.downTime);
+
+        initVideo();
+        /* CountDownTimer方式进行倒计时进入 */
+        //initDownTime();
+
+        /* handle方式倒计时进入 */
+        handler.sendEmptyMessageDelayed(0, 1000);
+    }
+
+    private void initDownTime() {
+        mTimer = new CountDownTimer(6000, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                downTime.setText("倒计时：" + (millisUntilFinished / 1000) + "s");
+            }
+            @Override
+            public void onFinish() {
+                openActivity(MainActivity.class);
+                WelcomeActivity.this.finish();
+            }
+        }.start();
+    }
+
+    private int getCount() {
+        count--;
+        if (count == 0) {
+            openActivity(MainActivity.class);
+            finish();
+        }
+        return count;
+    }
+
+    private Handler handler = new Handler() {
+        public void handleMessage(android.os.Message msg) {
+            if (msg.what == 0) {
+                downTime.setText("倒计时：" + getCount() + "s");
+                handler.sendEmptyMessageDelayed(0, 1000);
+            }
+        };
+    };
+
+    private void initVideo() {
+        welcome_button = (Button) this.findViewById(R.id.welcome_button);
         welcome_videoview = (CustomVideoView) this.findViewById(R.id.welcome_videoview);
-        welcome_videoview.setVideoURI(Uri.parse("android.resource://"+this.getPackageName()+"/"+R.raw.kr36));
+        welcome_videoview.setVideoURI(Uri.parse("android.resource://" + this.getPackageName() + "/" + R.raw.kr36));
         welcome_videoview.start();
         welcome_videoview.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -41,17 +92,18 @@ public class WelcomeActivity extends BaseActivity {
         welcome_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(welcome_videoview.isPlaying()){
+                if (welcome_videoview.isPlaying()) {
                     welcome_videoview.stopPlayback();
-                    welcome_videoview=null;
+                    welcome_videoview = null;
                 }
+                //mTimer.cancel();
                 openActivity(MainActivity.class);
                 WelcomeActivity.this.finish();
             }
         });
     }
 
-    private  String getAppVersionName(Context context) {
+    private String getAppVersionName(Context context) {
         String versionName = "";
         try {
             PackageManager packageManager = context.getPackageManager();

@@ -121,6 +121,9 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_animation:
                 openActivity(AnimationActivity.class);
                 break;
+            case R.id.bt_AutoLinkText:
+                openActivity(AutoLinkTextActivity.class);
+                break;
         }
     }
 

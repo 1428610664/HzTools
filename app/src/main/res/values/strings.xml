@@ -63,4 +63,5 @@
     <string name="jsbridge"><![CDATA[JS <=> Android]]></string>
     <string name="alert">alert弹窗</string>
     <string name="animation">动画</string>
+    <string name="AutoLinkText">LinkText</string>
 </resources>

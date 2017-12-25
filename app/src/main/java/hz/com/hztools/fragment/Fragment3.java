@@ -26,15 +26,20 @@ public class Fragment3 extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerViewAdapter mAdapter;
     private List<String> mData;
+    private View mView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.layour_fragment_item, null);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler);
-        initRecyclerView();
-        return view;
+        if(null == mView){
+            mView = inflater.inflate(R.layout.layour_fragment_item, null);
+            mRecyclerView = (RecyclerView) mView.findViewById(R.id.recycler);
+            initRecyclerView();
+            Log.v("hz","=============Fragment3===========");
+        }
+
+        return mView;
     }
 
     private void initRecyclerView() {

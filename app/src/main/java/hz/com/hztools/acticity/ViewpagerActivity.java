@@ -51,6 +51,7 @@ public class ViewpagerActivity extends AppCompatActivity {
         initFragment();
 
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
+        mViewPager.setOffscreenPageLimit(1);
         mViewPager.setAdapter(mMyPagerAdaper);
         initMagicIndicator();
     }

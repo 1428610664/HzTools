@@ -61,6 +61,7 @@
         <activity android:name=".acticity.NumberProgressbarActivity"/>
         <activity android:name=".acticity.JsbridgeActivity"/>
         <activity android:name=".acticity.AnimationActivity"/>
+        <activity android:name=".acticity.AutoLinkTextActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
     <hz.com.hztools.widget.CustomVideoView
         android:id="@+id/welcome_videoview"
         android:layout_width="fill_parent"
@@ -11,15 +11,32 @@
         android:focusable="false"
         android:focusableInTouchMode="false"
         />
-     <Button
-         android:id="@+id/welcome_button"
-         android:layout_marginBottom="30dp"
-         android:layout_centerHorizontal="true"
-         android:layout_alignParentBottom="true"
-         android:text="点击进入"
-         android:textSize="16sp"
-         android:textColor="@color/white"
-         android:layout_width="120dp"
-         android:layout_height="40dp"
-         android:background="@drawable/head_bt_bg"/>
+
+    <Button
+        android:id="@+id/welcome_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/shape_tv_bg"
+        android:text="点击进入"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/downTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:text="倒计时：5s"
+        android:textSize="12sp"
+        android:background="@drawable/shape_tv_bg"
+        android:padding="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/white"/>
+
 </RelativeLayout>

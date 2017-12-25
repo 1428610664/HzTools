@@ -5,9 +5,11 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,15 +27,26 @@ public class Fragment2 extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerViewAdapter mAdapter;
     private List<String> mData;
+    private View mView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.layour_fragment_item, null);
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler);
-        initRecyclerView();
-        return view;
+        if(null == mView){
+            mView = inflater.inflate(R.layout.layour_fragment_item, null);
+            mRecyclerView = (RecyclerView) mView.findViewById(R.id.recycler);
+            initRecyclerView();
+            Log.v("hz","=============Fragment2===========");
+        }
+        return mView;
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        // 通过判断isVisibleToUser是否weitrue和判断null == mView来做当前页面加载数据等操作一次加载
+        Toast.makeText(HzApplication.getContext(), "========Fragment2=======" + isVisibleToUser, Toast.LENGTH_SHORT).show();
     }
 
     private void initRecyclerView() {
