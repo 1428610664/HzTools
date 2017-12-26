@@ -36,4 +36,9 @@
         app:AutoLinkStyleTextView_start_image="@mipmap/ic_launcher"
         app:AutoLinkStyleTextView_type="start_image"/>
 
+    <hz.com.hztools.widget.ClearEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/colorPrimary"/>
+
 </LinearLayout>

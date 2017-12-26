@@ -13,4 +13,10 @@
         </attr>
     </declare-styleable>
 
+
+    <declare-styleable name="ClearEditText">
+        <!-- 清除按钮的图标 -->
+        <attr name="iconClear" format="reference"/>
+    </declare-styleable>
+
 </resources>

@@ -30,12 +30,22 @@ public class WelcomeActivity extends BaseActivity {
     private CountDownTimer mTimer;
     private int count = 5;
 
+    private boolean isClose = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
         downTime = (TextView) findViewById(R.id.downTime);
+        downTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isClose = true;
+                openActivity(MainActivity.class);
+                finish();
+            }
+        });
 
         initVideo();
         /* CountDownTimer方式进行倒计时进入 */
@@ -54,7 +64,7 @@ public class WelcomeActivity extends BaseActivity {
             @Override
             public void onFinish() {
                 openActivity(MainActivity.class);
-                WelcomeActivity.this.finish();
+                finish();
             }
         }.start();
     }
@@ -62,8 +72,10 @@ public class WelcomeActivity extends BaseActivity {
     private int getCount() {
         count--;
         if (count == 0) {
-            openActivity(MainActivity.class);
-            finish();
+            if(!isClose){
+                openActivity(MainActivity.class);
+                finish();
+            }
         }
         return count;
     }
@@ -71,7 +83,7 @@ public class WelcomeActivity extends BaseActivity {
     private Handler handler = new Handler() {
         public void handleMessage(android.os.Message msg) {
             if (msg.what == 0) {
-                downTime.setText("倒计时：" + getCount() + "s");
+                downTime.setText("跳过：" + getCount() + "s");
                 handler.sendEmptyMessageDelayed(0, 1000);
             }
         };
@@ -116,5 +128,11 @@ public class WelcomeActivity extends BaseActivity {
             e.printStackTrace();
         }
         return versionName;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        isClose = true;
     }
 }

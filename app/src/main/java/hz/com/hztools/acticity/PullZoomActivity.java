@@ -1,5 +1,6 @@
 package hz.com.hztools.acticity;
 
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -58,7 +59,7 @@ public class PullZoomActivity extends AppCompatActivity implements View.OnClickL
                 "BroadcastReceiver", "ADT", "Sqlite3", "HttpClient", "Activity", "Service", "Content Provider", "Intent",
                 "BroadcastReceiver", "ADT", "Sqlite3", "HttpClient"};
 
-        listView.setAdapter(new ArrayAdapter<String>(PullZoomActivity.this, android.R.layout.simple_list_item_1, adapterData));
+        listView.setAdapter(new ArrayAdapter<String>(PullZoomActivity.this, R.layout.item_tv2, adapterData));
         listView.getPullRootView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -103,8 +104,13 @@ public class PullZoomActivity extends AppCompatActivity implements View.OnClickL
         mLists.add("Disable Zoom");
         mLists.add("Enable Zoom");
 
+
+        Resources resources = getResources();
+        DisplayMetrics dm = resources.getDisplayMetrics();
+        int width = dm.widthPixels;
+
         dialog = new IndicatorBuilder(this)
-                .width(300)
+                .width((int)(width * 0.4))
                 .height(600)
                 .ArrowDirection(IndicatorBuilder.RIGHT)
                 .bgColor(Color.WHITE)

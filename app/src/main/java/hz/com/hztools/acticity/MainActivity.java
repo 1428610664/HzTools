@@ -124,6 +124,9 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_AutoLinkText:
                 openActivity(AutoLinkTextActivity.class);
                 break;
+            case R.id.bt_ninegrid:
+                openActivity(NinegridActivity.class);
+                break;
         }
     }
 
@@ -150,7 +153,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-
         if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN) {
             long secondTime = System.currentTimeMillis();
             if (secondTime - firstTime > 2000) {

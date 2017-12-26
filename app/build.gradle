@@ -99,5 +99,7 @@ dependencies {
     /* 动画 */
     compile 'com.daimajia.easing:library:2.0@aar'
     compile 'com.daimajia.androidanimations:library:2.3@aar'
+    /* 九宫格图片 */
+    compile 'com.jaeger.ninegridimageview:library:1.1.1'
 
 }

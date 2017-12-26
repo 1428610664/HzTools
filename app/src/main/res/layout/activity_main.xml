@@ -560,9 +560,12 @@
                     android:background="#cacaca"/>
 
                 <TextView
+                    android:id="@+id/bt_ninegrid"
                     android:layout_width="358px"
                     android:layout_height="360px"
                     android:gravity="center"
+                    android:onClick="onClick"
+                    android:text="@string/ninegrid"
                     android:background="@drawable/selector_bg"/>
 
                 <View

@@ -15,11 +15,11 @@
         android:maxLines="3"
         app:minTextSize="8sp"/>
 
-    <EditText
+    <hz.com.hztools.widget.ClearEditText
         android:id="@+id/et_inp"
-        android:layout_margin="15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/colorPrimary"
         android:singleLine="true"/>
 
 </LinearLayout>

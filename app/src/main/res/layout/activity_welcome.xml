@@ -22,6 +22,7 @@
         android:background="@drawable/shape_tv_bg"
         android:text="点击进入"
         android:textColor="@color/white"
+        android:visibility="gone"
         android:textSize="14sp"/>
 
     <TextView
@@ -31,12 +32,13 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="40dp"
         android:layout_marginRight="15dp"
-        android:text="倒计时：5s"
-        android:textSize="12sp"
+        android:text="跳过：5s"
+        android:textSize="10sp"
         android:background="@drawable/shape_tv_bg"
-        android:padding="5dp"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
         android:textColor="@color/white"/>
 
 </RelativeLayout>
