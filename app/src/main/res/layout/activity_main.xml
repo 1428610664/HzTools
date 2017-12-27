@@ -574,6 +574,108 @@
                     android:background="#cacaca"/>
 
                 <TextView
+                    android:id="@+id/bt_filterView"
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:onClick="onClick"
+                    android:gravity="center"
+                    android:text="@string/filterview"
+                    android:background="@drawable/selector_bg"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_scroll"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/scroll"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:id="@+id/bt_video"
+                    android:text="@string/video"
+                    android:onClick="onClick"
+                    android:background="@drawable/selector_bg"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:text="@string/nodeProgress"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_NodeProgress"
+                    android:gravity="center"
+                    android:background="@drawable/selector_bg"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_deviceIndo"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/deviceIndo"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_login"
+                    android:background="@drawable/selector_bg"
+                    android:text="@string/login"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
                     android:layout_width="360px"
                     android:layout_height="360px"
                     android:gravity="center"

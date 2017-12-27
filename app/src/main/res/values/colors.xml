@@ -24,4 +24,12 @@
 
     <color name="line">#c9c9c9</color>
     <color name="textcolor">#c3c3c3</color>
+
+
+    <color name="tab_text_select">#00cfc7</color>
+    <color name="tab_mine_name">#333333</color>
+    <color name="tab_main_text_select">#888888</color>
+
+    <color name="colorInitFloatBackground">#80ffffff</color>
+    <color name="colorCollapsedFloatBackground">#e4e4e4</color>
 </resources>

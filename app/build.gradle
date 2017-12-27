@@ -35,19 +35,16 @@ configurations.all {
     }
 }
 dependencies {
-
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
-
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'com.readystatesoftware.chuck:library:1.0.4'
-
     /* popup弹窗 */
     compile 'com.github.jiang111:IndicatorDialog:v1.3.7'
     /* slider */
-    compile "com.android.support:support-v4:+"
+    compile 'com.android.support:support-v4:+'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.slider:library:1.1.5@aar'
@@ -87,7 +84,7 @@ dependencies {
     /* 屏幕适配 */
     compile 'com.zhy:autolayout:1.4.5'
     /* logo消息数字 */
-    compile "me.leolin:ShortcutBadger:1.1.19@aar"
+    compile 'me.leolin:ShortcutBadger:1.1.19@aar'
     /* 进度条 */
     compile 'com.daimajia.numberprogressbar:library:1.4@aar'
     /* 下拉刷新 上拉加载 */
@@ -101,5 +98,5 @@ dependencies {
     compile 'com.daimajia.androidanimations:library:2.3@aar'
     /* 九宫格图片 */
     compile 'com.jaeger.ninegridimageview:library:1.1.1'
-
+    compile project(':recordlib')
 }

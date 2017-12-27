@@ -65,4 +65,18 @@
     <string name="animation">动画</string>
     <string name="AutoLinkText">LinkText</string>
     <string name="ninegrid">九宫格图片</string>
+
+
+    <string name="tab_order_today">今天</string>
+    <string name="tab_order_whole">全部订单</string>
+    <string name="tab_order_not_spending">未消费</string>
+    <string name="filterview">过滤菜单</string>
+
+    <string name="header_scrolling_behavior">hz.com.hztools.widget.HeaderScrollingBehavior</string>
+    <string name="header_float_behavior">hz.com.hztools.widget.HeaderFloatBehavior</string>
+    <string name="scroll">Scroll</string>
+    <string name="video">小视频录制</string>
+    <string name="nodeProgress">节点进度</string>
+    <string name="deviceIndo">设备信息</string>
+    <string name="login">登录</string>
 </resources>

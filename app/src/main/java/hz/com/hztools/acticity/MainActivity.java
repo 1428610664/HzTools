@@ -127,6 +127,24 @@ public class MainActivity extends BaseActivity {
             case R.id.bt_ninegrid:
                 openActivity(NinegridActivity.class);
                 break;
+            case R.id.bt_filterView:
+                openActivity(FilterViewActivity.class);
+                break;
+            case R.id.bt_scroll:
+                openActivity(ScrollingActivity.class);
+                break;
+            case R.id.bt_video:
+                openActivity(VideoActivity.class);
+                break;
+            case R.id.tb_NodeProgress:
+                openActivity(NodeProgressActivity.class);
+                break;
+            case R.id.tb_deviceIndo:
+                openActivity(DeviceInfoActivity.class);
+                break;
+            case R.id.tb_login:
+                openActivity(LoginActivity.class);
+                break;
         }
     }
 

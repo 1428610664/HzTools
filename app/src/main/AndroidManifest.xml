@@ -63,6 +63,12 @@
         <activity android:name=".acticity.AnimationActivity"/>
         <activity android:name=".acticity.AutoLinkTextActivity"/>
         <activity android:name=".acticity.NinegridActivity"/>
+        <activity android:name=".acticity.FilterViewActivity"/>
+        <activity android:name=".acticity.ScrollingActivity"/>
+        <activity android:name=".acticity.VideoActivity"/>
+        <activity android:name=".acticity.NodeProgressActivity"/>
+        <activity android:name=".acticity.DeviceInfoActivity"/>
+        <activity android:name=".acticity.LoginActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
