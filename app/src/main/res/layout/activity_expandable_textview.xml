@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/ExpandableTextView"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/comparison"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/tv_comparison"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_hint"
+                android:background="#22999999"
+                android:padding="12dp"
+                android:text="@string/poem_0"
+                android:textSize="12dp"/>
+
+            <cn.carbs.android.expandabletextview.library.ExpandableTextView
+                android:id="@+id/etv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="32dp"
+                android:background="#22999999"
+                android:padding="12dp"
+                android:text="@string/poem_0"
+                android:textSize="12dp"/>
+
+            <!-- <declare-styleable name="ExpandableTextView">
+                 <attr name="etv_MaxLinesOnShrink" format="reference|integer" />
+                 <attr name="etv_EllipsisHint" format="reference|string" />&lt;!&ndash;default is ..&ndash;&gt;
+                 <attr name="etv_ToExpandHint" format="reference|string" />&lt;!&ndash;"to expand" hint string, default is "Expand"&ndash;&gt;
+                 <attr name="etv_ToShrinkHint" format="reference|string" />&lt;!&ndash;"to shrink" hint string, default is "Shrink"&ndash;&gt;
+                 <attr name="etv_GapToExpandHint" format="reference|string" />&lt;!&ndash;gap between "toExpandHint" and "trimmed text"&ndash;&gt;
+                 <attr name="etv_GapToShrinkHint" format="reference|string" />&lt;!&ndash;gap between "toShrinkHint" and "trimmed text"&ndash;&gt;
+                 <attr name="etv_EnableToggle" format="reference|boolean" />&lt;!&ndash;if toggle the state when click ExpandTextView&ndash;&gt;
+                 <attr name="etv_ToExpandHintShow" format="reference|boolean" />&lt;!&ndash;if show "toExpandHint"&ndash;&gt;
+                 <attr name="etv_ToShrinkHintShow" format="reference|boolean" />&lt;!&ndash;if show "toShrinkHint"&ndash;&gt;
+                 <attr name="etv_ToExpandHintColor" format="reference|color" />&lt;!&ndash;text color of "toExpandHint"&ndash;&gt;
+                 <attr name="etv_ToShrinkHintColor" format="reference|color" />&lt;!&ndash;text color of "toShrinkHint"&ndash;&gt;
+                 <attr name="etv_ToExpandHintColorBgPressed" format="reference|color" />&lt;!&ndash;background color if "toExpandHint" pressed&ndash;&gt;
+                 <attr name="etv_ToShrinkHintColorBgPressed" format="reference|color" />&lt;!&ndash;background color if "toShrinkHint" pressed&ndash;&gt;
+                 <attr name="etv_InitState" format="enum">&lt;!&ndash;init state, default is shrink&ndash;&gt;
+                     <enum name="shrink" value="0"/>
+                     <enum name="expand" value="1"/>
+                 </attr>
+             </declare-styleable>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/etv"
+                android:padding="10dp"
+                android:text="@string/effect"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/button_to_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:text="check in ListView"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/button_update_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:text="update ExpandableTextView"
+                android:textAllCaps="false"
+                android:textColor="#fff"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

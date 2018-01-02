@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/primary_material_dark"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/RickText"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <com.shuyu.textutillib.RichEditText
+        android:id="@+id/emoji_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:gravity="left"
+        android:hint="请输入贴子内容"
+        android:maxLines="7"
+        android:textColor="@color/test_spacing4"
+        android:textColorHint="@color/tab_main_text_select"
+        app:richMaxLength="2000"/>
+
+
+    <ImageView
+        android:id="@+id/emoji_show_bottom"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emoji_edit_text"
+        android:layout_margin="10dp"
+        android:src="@drawable/publish_face_n3x"/>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/emoji_edit_text"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/emoji_show_at"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/publish_at_d3x"/>
+
+        <TextView
+            android:id="@+id/emoji_show_topic"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text=" # "
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/insert_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button_layout"
+        android:layout_margin="10dp"
+        android:text="插入文本"/>
+
+    <Button
+        android:id="@+id/jump_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button_layout"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/insert_text_btn"
+        android:text="自定义表情"/>
+
+
+    <Button
+        android:id="@+id/jump_mvvm"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/jump_btn"
+        android:layout_margin="10dp"
+        android:text="mvvm"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/jump_mvvm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rich_text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="TextView模式"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/rich_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rich_text_title_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="RichTextView模式"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"/>
+
+            <com.shuyu.textutillib.RichTextView
+                android:id="@+id/rich_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.shuyu.textutillib.EmojiLayout
+        android:id="@+id/emojiLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:richIndicatorFocus="@drawable/page_indicator_focused"
+        app:richIndicatorUnFocus="@drawable/page_indicator_unfocused"
+        app:richLayoutNumColumns="5"
+        app:richLayoutNumRows="3"
+        app:richMarginBottom="8dp"
+        app:richMarginTop="15dp"/>
+
+</RelativeLayout>

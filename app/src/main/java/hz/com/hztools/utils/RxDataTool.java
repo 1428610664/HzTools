@@ -53,7 +53,7 @@ import static hz.com.hztools.utils.RxConstTool.MB;
  * #                                                   #
  */
 
-public class HzUtils {
+public class RxDataTool {
 
     static final char hexDigits[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
             'A', 'B', 'C', 'D', 'E', 'F'};
@@ -238,7 +238,7 @@ public class HzUtils {
      */
     public static int[] stringToInts(String s) {
         int[] n = new int[s.length()];
-        if (HzUtils.isNullString(s)) {
+        if (RxDataTool.isNullString(s)) {
 
         } else {
             for (int i = 0; i < s.length(); i++) {

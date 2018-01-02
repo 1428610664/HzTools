@@ -69,6 +69,16 @@
         <activity android:name=".acticity.NodeProgressActivity"/>
         <activity android:name=".acticity.DeviceInfoActivity"/>
         <activity android:name=".acticity.LoginActivity"/>
+        <activity android:name=".acticity.AddPicViewActivity"/>
+        <activity android:name=".acticity.GetResourceActivity"/>
+
+        <activity android:name=".rick.RickTextActivity"/>
+        <activity android:name=".rick.NewEmojiActivity"/>
+        <activity android:name=".rick.TopicListActivity"/>
+        <activity android:name=".rick.UserListActivity"/>
+
+        <activity android:name=".acticity.ExpandableTextViewActivity"/>
+        <activity android:name=".expandableText.ExpandableTextActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

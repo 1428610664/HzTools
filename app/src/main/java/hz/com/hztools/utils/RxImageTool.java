@@ -406,7 +406,7 @@ public class RxImageTool {
      * @return bitmap
      */
     public static Bitmap getBitmap(String filePath) {
-        if (HzUtils.isNullString(filePath)) return null;
+        if (RxDataTool.isNullString(filePath)) return null;
         return BitmapFactory.decodeFile(filePath);
     }
 
@@ -419,7 +419,7 @@ public class RxImageTool {
      * @return bitmap
      */
     public static Bitmap getBitmap(String filePath, int maxWidth, int maxHeight) {
-        if (HzUtils.isNullString(filePath)) return null;
+        if (RxDataTool.isNullString(filePath)) return null;
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
         BitmapFactory.decodeFile(filePath, options);

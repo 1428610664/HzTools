@@ -41,6 +41,8 @@ dependencies {
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'com.readystatesoftware.chuck:library:1.0.4'
+
+
     /* popup弹窗 */
     compile 'com.github.jiang111:IndicatorDialog:v1.3.7'
     /* slider */
@@ -98,5 +100,16 @@ dependencies {
     compile 'com.daimajia.androidanimations:library:2.3@aar'
     /* 九宫格图片 */
     compile 'com.jaeger.ninegridimageview:library:1.1.1'
+    /* 自定义仿qq录像 */
     compile project(':recordlib')
+    /* 添加图片 */
+    compile 'com.github.yzytmac:addpicview:1.0.0'
+    /* 工具类依赖 */
+    compile files('libs/zip4j_1.3.2.jar')
+    /* textView */
+    compile 'com.github.CarGuo.RickText:textUtilsLib:v2.1.4'
+    /* 展开更多TextView */
+    compile 'cn.carbs.android:ExpandableTextView:1.0.3'
+    /* 展开更多 动画 */
+    compile 'com.ms-square:expandableTextView:0.1.4'
 }

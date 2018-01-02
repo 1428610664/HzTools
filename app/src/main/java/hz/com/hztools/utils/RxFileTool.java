@@ -148,7 +148,7 @@ public class RxFileTool {
         long blockSize, availableBlocks;
         availableBlocks = stat.getAvailableBlocksLong();
         blockSize = stat.getBlockSizeLong();
-        return HzUtils.byte2FitSize(availableBlocks * blockSize);
+        return RxDataTool.byte2FitSize(availableBlocks * blockSize);
     }
 
     /**
@@ -741,7 +741,7 @@ public class RxFileTool {
      * @return 文件
      */
     public static File getFileByPath(String filePath) {
-        return HzUtils.isNullString(filePath) ? null : new File(filePath);
+        return RxDataTool.isNullString(filePath) ? null : new File(filePath);
     }
     //==============================================================================================
 
@@ -1466,7 +1466,7 @@ public class RxFileTool {
             String line;
             int curLine = 1;
             List<String> list = new ArrayList<>();
-            if (HzUtils.isNullString(charsetName)) {
+            if (RxDataTool.isNullString(charsetName)) {
                 reader = new BufferedReader(new FileReader(file));
             } else {
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), charsetName));
@@ -1508,7 +1508,7 @@ public class RxFileTool {
         BufferedReader reader = null;
         try {
             StringBuilder sb = new StringBuilder();
-            if (HzUtils.isNullString(charsetName)) {
+            if (RxDataTool.isNullString(charsetName)) {
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
             } else {
                 reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), charsetName));
@@ -1546,7 +1546,7 @@ public class RxFileTool {
     public static byte[] readFile2Bytes(File file) {
         if (file == null) return null;
         try {
-            return HzUtils.inputStream2Bytes(new FileInputStream(file));
+            return RxDataTool.inputStream2Bytes(new FileInputStream(file));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             return null;
@@ -1647,7 +1647,7 @@ public class RxFileTool {
      */
     public static String getFileSize(File file) {
         if (!isFileExists(file)) return "";
-        return HzUtils.byte2FitSize(file.length());
+        return RxDataTool.byte2FitSize(file.length());
     }
 
     /**
@@ -1706,7 +1706,7 @@ public class RxFileTool {
      * @return filePath最长目录
      */
     public static String getDirName(String filePath) {
-        if (HzUtils.isNullString(filePath)) return filePath;
+        if (RxDataTool.isNullString(filePath)) return filePath;
         int lastSep = filePath.lastIndexOf(File.separator);
         return lastSep == -1 ? "" : filePath.substring(0, lastSep + 1);
     }
@@ -1729,7 +1729,7 @@ public class RxFileTool {
      * @return 文件名
      */
     public static String getFileName(String filePath) {
-        if (HzUtils.isNullString(filePath)) return filePath;
+        if (RxDataTool.isNullString(filePath)) return filePath;
         int lastSep = filePath.lastIndexOf(File.separator);
         return lastSep == -1 ? filePath : filePath.substring(lastSep + 1);
     }
@@ -1752,7 +1752,7 @@ public class RxFileTool {
      * @return 不带拓展名的文件名
      */
     public static String getFileNameNoExtension(String filePath) {
-        if (HzUtils.isNullString(filePath)) return filePath;
+        if (RxDataTool.isNullString(filePath)) return filePath;
         int lastPoi = filePath.lastIndexOf('.');
         int lastSep = filePath.lastIndexOf(File.separator);
         if (lastSep == -1) {
@@ -1782,7 +1782,7 @@ public class RxFileTool {
      * @return 文件拓展名
      */
     public static String getFileExtension(String filePath) {
-        if (HzUtils.isNullString(filePath)) return filePath;
+        if (RxDataTool.isNullString(filePath)) return filePath;
         int lastPoi = filePath.lastIndexOf('.');
         int lastSep = filePath.lastIndexOf(File.separator);
         if (lastPoi == -1 || lastSep >= lastPoi) return "";

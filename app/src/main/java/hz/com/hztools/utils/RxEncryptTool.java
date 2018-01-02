@@ -12,8 +12,8 @@ import java.security.SecureRandom;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-import static hz.com.hztools.utils.HzUtils.bytes2HexString;
-import static hz.com.hztools.utils.HzUtils.hexString2Bytes;
+import static hz.com.hztools.utils.RxDataTool.bytes2HexString;
+import static hz.com.hztools.utils.RxDataTool.hexString2Bytes;
 
 /**
  * Created by hz on 2017/12/27.

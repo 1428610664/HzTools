@@ -74,7 +74,7 @@ import java.util.Map;
  * #                                                   #
  */
 
-public class DeviceTool {
+public class RxDeviceTool {
 
     /**
      * 得到屏幕的高
@@ -647,7 +647,7 @@ public class DeviceTool {
      * @param phoneNumber 电话号码
      */
     public static void callPhone(final Context context, String phoneNumber) {
-        if (!HzUtils.isNullString(phoneNumber)) {
+        if (!RxDataTool.isNullString(phoneNumber)) {
             final String phoneNumber1 = phoneNumber.trim();// 删除字符串首部和尾部的空格
             // 调用系统的拨号服务实现电话拨打功能
             // 封装一个拨打电话的intent，并且将电话号码包装成一个Uri对象传入
@@ -668,9 +668,9 @@ public class DeviceTool {
      * @param content     内容
      */
     public static void sendSms(Context context, String phoneNumber, String content) {
-        Uri uri = Uri.parse("smsto:" + (HzUtils.isNullString(phoneNumber) ? "" : phoneNumber));
+        Uri uri = Uri.parse("smsto:" + (RxDataTool.isNullString(phoneNumber) ? "" : phoneNumber));
         Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
-        intent.putExtra("sms_body", HzUtils.isNullString(content) ? "" : content);
+        intent.putExtra("sms_body", RxDataTool.isNullString(content) ? "" : content);
         context.startActivity(intent);
     }
 
@@ -704,7 +704,7 @@ public class DeviceTool {
             // cursor.getString(cursor.getColumnIndex("contact_id"));//getColumnIndex
             // : 查询字段在cursor中索引值,一般都是用在查询字段比较多的时候
             // 判断contact_id是否为空
-            if (!HzUtils.isNullString(contact_id)) {//null   ""
+            if (!RxDataTool.isNullString(contact_id)) {//null   ""
                 // 7.根据contact_id查询view_data表中的数据
                 // selection : 查询条件
                 // selectionArgs :查询条件的参数

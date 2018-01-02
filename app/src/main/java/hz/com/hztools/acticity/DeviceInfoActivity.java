@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import hz.com.hztools.R;
-import hz.com.hztools.utils.DeviceTool;
+import hz.com.hztools.utils.RxDeviceTool;
 
 /**
  * Created by hz on 2017/12/27.
@@ -80,39 +80,39 @@ public class DeviceInfoActivity extends AppCompatActivity {
         TextView mTvDevicePhone = (TextView) findViewById(R.id.tv_device_phone);
 
         Context mContext = this;
-        if (DeviceTool.isPhone(mContext)) {
+        if (RxDeviceTool.isPhone(mContext)) {
             mTvDeviceIsPhone.setText("是");
         } else {
             mTvDeviceIsPhone.setText("否");
         }
 
-        mTvDeviceSoftwarePhoneType.setText(DeviceTool.getPhoneType(this) + "");
-        mTvDeviceDensity.setText(DeviceTool.getScreenDensity(mContext) + "");
-        mTvDeviceManuFacturer.setText(DeviceTool.getUniqueSerialNumber() + "");
-        mTvDeviceWidth.setText(DeviceTool.getScreenWidth(mContext) + " ");
-        mTvDeviceHeight.setText(DeviceTool.getScreenHeight(mContext) + " ");
-        mTvDeviceVersionName.setText(DeviceTool.getAppVersionName(mContext) + "");
-        mTvDeviceVersionCode.setText(DeviceTool.getAppVersionNo(mContext) + "");
-        mTvDeviceImei.setText(DeviceTool.getDeviceIdIMEI(mContext) + "");
-        mTvDeviceImsi.setText(DeviceTool.getIMSI(mContext) + "");
-        mTvDeviceSoftwareVersion.setText(DeviceTool.getDeviceSoftwareVersion(mContext) + "");
-        mTvDeviceMac.setText(DeviceTool.getMacAddress(mContext));
-        mTvDeviceSoftwareMccMnc.setText(DeviceTool.getNetworkOperator(mContext) + "");
-        mTvDeviceSoftwareMccMncName.setText(DeviceTool.getNetworkOperatorName(mContext) + "");
-        mTvDeviceSoftwareSimCountryIso.setText(DeviceTool.getNetworkCountryIso(mContext) + "");
-        mTvDeviceSimOperator.setText(DeviceTool.getSimOperator(mContext) + "");
-        mTvDeviceSimSerialNumber.setText(DeviceTool.getSimSerialNumber(mContext) + "");
-        mTvDeviceSimState.setText(DeviceTool.getSimState(mContext) + "");
-        mTvDeviceSimOperatorName.setText(DeviceTool.getSimOperatorName(mContext) + "");
-        mTvDeviceSubscriberId.setText(DeviceTool.getSubscriberId(mContext) + "");
-        mTvDeviceVoiceMailNumber.setText(DeviceTool.getVoiceMailNumber(mContext) + "");
-        mTvDeviceAdnroidId.setText(DeviceTool.getAndroidId(mContext) + "");
-        mTvDeviceBuildBrandModel.setText(DeviceTool.getBuildBrandModel() + "");
-        mTvDeviceBuildManuFacturer.setText(DeviceTool.getBuildMANUFACTURER() + "");
-        mTvDeviceBuildBrand.setText(DeviceTool.getBuildBrand() + "");
-        mTvDeviceSerialNumber.setText(DeviceTool.getSerialNumber() + "");
-        mTvDeviceIso.setText(DeviceTool.getNetworkCountryIso(mContext) + "");
-        mTvDevicePhone.setText(DeviceTool.getLine1Number(mContext) + "");
+        mTvDeviceSoftwarePhoneType.setText(RxDeviceTool.getPhoneType(this) + "");
+        mTvDeviceDensity.setText(RxDeviceTool.getScreenDensity(mContext) + "");
+        mTvDeviceManuFacturer.setText(RxDeviceTool.getUniqueSerialNumber() + "");
+        mTvDeviceWidth.setText(RxDeviceTool.getScreenWidth(mContext) + " ");
+        mTvDeviceHeight.setText(RxDeviceTool.getScreenHeight(mContext) + " ");
+        mTvDeviceVersionName.setText(RxDeviceTool.getAppVersionName(mContext) + "");
+        mTvDeviceVersionCode.setText(RxDeviceTool.getAppVersionNo(mContext) + "");
+        mTvDeviceImei.setText(RxDeviceTool.getDeviceIdIMEI(mContext) + "");
+        mTvDeviceImsi.setText(RxDeviceTool.getIMSI(mContext) + "");
+        mTvDeviceSoftwareVersion.setText(RxDeviceTool.getDeviceSoftwareVersion(mContext) + "");
+        mTvDeviceMac.setText(RxDeviceTool.getMacAddress(mContext));
+        mTvDeviceSoftwareMccMnc.setText(RxDeviceTool.getNetworkOperator(mContext) + "");
+        mTvDeviceSoftwareMccMncName.setText(RxDeviceTool.getNetworkOperatorName(mContext) + "");
+        mTvDeviceSoftwareSimCountryIso.setText(RxDeviceTool.getNetworkCountryIso(mContext) + "");
+        mTvDeviceSimOperator.setText(RxDeviceTool.getSimOperator(mContext) + "");
+        mTvDeviceSimSerialNumber.setText(RxDeviceTool.getSimSerialNumber(mContext) + "");
+        mTvDeviceSimState.setText(RxDeviceTool.getSimState(mContext) + "");
+        mTvDeviceSimOperatorName.setText(RxDeviceTool.getSimOperatorName(mContext) + "");
+        mTvDeviceSubscriberId.setText(RxDeviceTool.getSubscriberId(mContext) + "");
+        mTvDeviceVoiceMailNumber.setText(RxDeviceTool.getVoiceMailNumber(mContext) + "");
+        mTvDeviceAdnroidId.setText(RxDeviceTool.getAndroidId(mContext) + "");
+        mTvDeviceBuildBrandModel.setText(RxDeviceTool.getBuildBrandModel() + "");
+        mTvDeviceBuildManuFacturer.setText(RxDeviceTool.getBuildMANUFACTURER() + "");
+        mTvDeviceBuildBrand.setText(RxDeviceTool.getBuildBrand() + "");
+        mTvDeviceSerialNumber.setText(RxDeviceTool.getSerialNumber() + "");
+        mTvDeviceIso.setText(RxDeviceTool.getNetworkCountryIso(mContext) + "");
+        mTvDevicePhone.setText(RxDeviceTool.getLine1Number(mContext) + "");
 
     }
 }

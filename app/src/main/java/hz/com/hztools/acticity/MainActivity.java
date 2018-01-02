@@ -10,6 +10,8 @@ import com.tapadoo.alerter.Alerter;
 
 import hz.com.hztools.R;
 import hz.com.hztools.acticity.Base.BaseActivity;
+import hz.com.hztools.expandableText.ExpandableTextActivity;
+import hz.com.hztools.rick.RickTextActivity;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class MainActivity extends BaseActivity {
@@ -144,6 +146,21 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.tb_login:
                 openActivity(LoginActivity.class);
+                break;
+            case R.id.tb_addpic:
+                openActivity(AddPicViewActivity.class);
+                break;
+            case R.id.tb_getResource:
+                openActivity(GetResourceActivity.class);
+                break;
+            case R.id.tb_RickText:
+                openActivity(RickTextActivity.class);
+                break;
+            case R.id.tb_ExpandableTextView:
+                openActivity(ExpandableTextViewActivity.class);
+                break;
+            case R.id.tb_ExpandableText:
+                openActivity(ExpandableTextActivity.class);
                 break;
         }
     }

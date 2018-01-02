@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:text="@string/getResource"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/selector_bt_bg"
+        android:text="Get Image"/>
+
+    <Button
+        android:id="@+id/getVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/selector_bt_bg"
+        android:text="Get Video"/>
+
+    <Button
+        android:id="@+id/getAudio"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/selector_bt_bg"
+        android:text="Get Audio"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+    </ScrollView>
+</LinearLayout>
