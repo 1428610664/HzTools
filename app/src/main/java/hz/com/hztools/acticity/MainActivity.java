@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tapadoo.alerter.Alerter;
@@ -12,11 +13,13 @@ import hz.com.hztools.R;
 import hz.com.hztools.acticity.Base.BaseActivity;
 import hz.com.hztools.expandableText.ExpandableTextActivity;
 import hz.com.hztools.rick.RickTextActivity;
+import hz.com.hztools.utils.AppCleanMgr;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class MainActivity extends BaseActivity {
 
     private long firstTime = 0;
+    private TextView mClearStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,10 @@ public class MainActivity extends BaseActivity {
 
         // 设置logo数字
         initShortcutBadger();
+        
+        String size = AppCleanMgr.getAppClearSize(this);
+        mClearStorage = (TextView) findViewById(R.id.tb_clearStorage);
+        mClearStorage.setText("清除缓存：" + size);
     }
 
     private void initShortcutBadger() {
@@ -162,7 +169,34 @@ public class MainActivity extends BaseActivity {
             case R.id.tb_ExpandableText:
                 openActivity(ExpandableTextActivity.class);
                 break;
+            case R.id.tb_horizontalListView:
+                openActivity(HorizontalListViewActivity.class);
+                break;
+            case R.id.tb_clearStorage:
+                clearStorage();
+                break;
+            case R.id.tb_miClock:
+                openActivity(MiClockActivity.class);
+                break;
         }
+    }
+
+    private void clearStorage() {
+        /*// 清除本应用内部缓存数据
+        AppCleanMgr.cleanInternalCache(this);
+        // 清除本应用外部缓存数据
+        AppCleanMgr.cleanExternalCache(this);
+       // 清除本应用所有数据库
+        AppCleanMgr.cleanDatabases(this);
+        // 清除本应用SharedPreference
+        AppCleanMgr.cleanSharedPreference(this);*/
+        // cleanDatabaseByName  ： 根据名字清除本应用数据库
+        // cleanFiles           ： 清除本应用files文件
+        // 清除本应用所有的数据
+        AppCleanMgr.cleanApplicationData(this);
+
+        String size = AppCleanMgr.getAppClearSize(this);
+        mClearStorage.setText("清除缓存：" + size);
     }
 
     public void alert(View v){

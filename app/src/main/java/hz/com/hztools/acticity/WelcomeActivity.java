@@ -37,6 +37,9 @@ public class WelcomeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
+        openActivity(MainActivity.class);
+        finish();
+        /*
         downTime = (TextView) findViewById(R.id.downTime);
         downTime.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,8 +54,8 @@ public class WelcomeActivity extends BaseActivity {
         /* CountDownTimer方式进行倒计时进入 */
         //initDownTime();
 
-        /* handle方式倒计时进入 */
-        handler.sendEmptyMessageDelayed(0, 1000);
+        /* handle方式倒计时进入
+        handler.sendEmptyMessageDelayed(0, 1000); */
     }
 
     private void initDownTime() {

@@ -16,6 +16,14 @@
         <!--<item name="android:windowDisablePreview">true</item>-->
     </style>
 
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/launcher</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--<item name="android:windowDisablePreview">true</item>-->
+    </style>
+
     <style name="bt_ordinary">
         <item name="android:paddingLeft">8dp</item>
         <item name="android:paddingRight">8dp</item>
@@ -99,5 +107,13 @@
         <item name="atg_checkedBackgroundColor">#FFFFFF</item>
         <item name="atg_pressedBackgroundColor">#FF99B1</item>
     </style>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
 
 </resources>

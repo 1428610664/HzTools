@@ -15,6 +15,22 @@
         android:gravity="center_vertical"/>
 
     <TextView
+        android:id="@+id/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:text="@string/android" />
+
+    <TextView
+        android:id="@+id/ios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:text="@string/ios" />
+
+    <TextView
         android:id="@+id/tv_iconfont"
         android:layout_width="match_parent"
         android:layout_height="0dp"

@@ -13,6 +13,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
@@ -119,6 +120,43 @@ public class RxDeviceTool {
      */
     public static float getScreenDensity(Context context) {
         return context.getResources().getDisplayMetrics().density;
+    }
+
+    /**
+     * 获取当前屏幕截图，包含状态栏
+     */
+    public static Bitmap snapShotWithStatusBar(Activity activity){
+        View view = activity.getWindow().getDecorView();
+        view.setDrawingCacheEnabled(true);
+        view.buildDrawingCache();
+        Bitmap bmp = view.getDrawingCache();
+        int width = getScreenWidth(activity);
+        int height = getScreenHeight(activity);
+        Bitmap bp = null;
+        bp = Bitmap.createBitmap(bmp, 0, 0, width, height);
+        view.destroyDrawingCache();
+        return bp;
+    }
+
+    /**
+     * 获取当前屏幕截图，不包含状态栏
+     *
+     */
+    public static Bitmap snapShotWithoutStatusBar(Activity activity){
+        View view = activity.getWindow().getDecorView();
+        view.setDrawingCacheEnabled(true);
+        view.buildDrawingCache();
+        Bitmap bmp = view.getDrawingCache();
+        Rect frame = new Rect();
+        activity.getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+        int statusBarHeight = frame.top;
+        int width = getScreenWidth(activity);
+        int height = getScreenHeight(activity);
+        Bitmap bp = null;
+        bp = Bitmap.createBitmap(bmp, 0, statusBarHeight, width, height
+                - statusBarHeight);
+        view.destroyDrawingCache();
+        return bp;
     }
 
 

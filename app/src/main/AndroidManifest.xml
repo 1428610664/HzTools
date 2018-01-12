@@ -23,7 +23,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".acticity.WelcomeActivity">
+        <activity android:name=".acticity.WelcomeActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -79,6 +80,8 @@
 
         <activity android:name=".acticity.ExpandableTextViewActivity"/>
         <activity android:name=".expandableText.ExpandableTextActivity"/>
+        <activity android:name=".acticity.HorizontalListViewActivity"/>
+        <activity android:name=".acticity.MiClockActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

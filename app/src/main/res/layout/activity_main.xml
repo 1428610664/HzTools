@@ -754,8 +754,59 @@
                     android:gravity="center"
                     android:onClick="onClick"
                     android:id="@+id/tb_ExpandableText"
-                    android:background="@drawable/selector_bg"
                     android:text="@string/ExpandableText"
+                    android:background="@drawable/selector_bg"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_horizontalListView"
+                    android:text="@string/horizontalListView"
+                    android:background="@drawable/selector_bg"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_clearStorage"
+                    android:text="@string/clearStorage"
+                    android:background="@drawable/selector_bg"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_miClock"
+                    android:text="@string/mi"
+                    android:background="@drawable/selector_bg"
                     />
 
                 <View

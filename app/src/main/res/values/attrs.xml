@@ -23,4 +23,12 @@
         <attr name="width" format="dimension"/>
         <attr name="nodeRadius" format="dimension"/>
     </declare-styleable>
+
+    <!-- 仿小米时钟 -->
+    <declare-styleable name="MiClockView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="lightColor" format="color" />
+        <attr name="darkColor" format="color" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
 </resources>
