@@ -178,6 +178,15 @@ public class MainActivity extends BaseActivity {
             case R.id.tb_miClock:
                 openActivity(MiClockActivity.class);
                 break;
+            case R.id.tb_BabushkaText:
+                openActivity(BabushkaTextActivity.class);
+                break;
+            case R.id.tb_DatePicker:
+                openActivity(DatePickerActivity.class);
+                break;
+            case R.id.tb_runTextView:
+                openActivity(RunTextViewActivity.class);
+                break;
         }
     }
 

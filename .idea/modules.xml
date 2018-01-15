@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HzTools.iml" filepath="$PROJECT_DIR$/HzTools.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hzruntext/hzruntext.iml" filepath="$PROJECT_DIR$/hzruntext/hzruntext.iml" />
       <module fileurl="file://$PROJECT_DIR$/recordlib/recordlib.iml" filepath="$PROJECT_DIR$/recordlib/recordlib.iml" />
     </modules>
   </component>

@@ -111,10 +111,14 @@ dependencies {
     /* 展开更多 动画 */
     compile 'com.ms-square:expandableTextView:0.1.4'
     compile files('libs/BASE64Decoder.jar')
-
     /* 字体图标 */
     compile 'com.mikepenz:iconics-core:2.5.5@aar'
     compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.1@aar'
     compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
     compile 'com.mikepenz:foundation-icons-typeface:3.0.0.1@aar'
+    /* babushka TextView */
+    compile files('libs/babushka-0.1.jar')
+    /* 日期选择 */
+    compile 'cn.aigestudio.datepicker:DatePicker:2.2.0'
+    compile project(':hzruntext')
 }

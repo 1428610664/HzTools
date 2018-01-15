@@ -184,4 +184,7 @@
     <string name="android">android</string>
     <string name="ios">ios</string>
     <string name="mi">小米时钟</string>
+    <string name="BabushkText">BabushkaText</string>
+    <string name="DatePicker">日期选择</string>
+    <string name="runTextView">广告</string>
 </resources>

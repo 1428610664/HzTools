@@ -82,6 +82,9 @@
         <activity android:name=".expandableText.ExpandableTextActivity"/>
         <activity android:name=".acticity.HorizontalListViewActivity"/>
         <activity android:name=".acticity.MiClockActivity"/>
+        <activity android:name=".acticity.BabushkaTextActivity"/>
+        <activity android:name=".acticity.DatePickerActivity"/>
+        <activity android:name=".acticity.RunTextViewActivity"/>
 
         <meta-data
             android:name="com.google.android.gms.version"

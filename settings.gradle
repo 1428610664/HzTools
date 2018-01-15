@@ -1,1 +1,1 @@
-include ':app', ':recordlib'
+include ':app', ':recordlib', ':hzruntext'
