@@ -31,6 +31,7 @@ public class HzApplication extends Application {
 
     private static Context mContext;
 
+    // 下拉刷新初始化
     static {
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         SmartRefreshLayout.setDefaultRefreshHeaderCreater(new DefaultRefreshHeaderCreater() {

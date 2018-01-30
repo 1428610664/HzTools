@@ -85,6 +85,17 @@
         <activity android:name=".acticity.BabushkaTextActivity"/>
         <activity android:name=".acticity.DatePickerActivity"/>
         <activity android:name=".acticity.RunTextViewActivity"/>
+        <activity android:name=".acticity.HzTitleActivity"/>
+        <activity android:name=".acticity.ImageBrowserActivity"/>
+        <activity android:name=".acticity.RollingRecyclerview"/>
+        <activity android:name=".acticity.GoodViewActivity"/>
+        <activity android:name=".acticity.XRichTextActivity"/>
+
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light"/>
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -97,6 +108,18 @@
         <meta-data
             android:name="design_height"
             android:value="1920"/>
+
+        <!-- 城市选择 -->
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--这里的value要替换成你项目的-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d7f296ff851c821a0d2f54a6e011ac84"/>
     </application>
 
 </manifest>

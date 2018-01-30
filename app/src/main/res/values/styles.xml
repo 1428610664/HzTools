@@ -116,4 +116,12 @@
         <attr name="android:fadingEdgeLength" />
     </declare-styleable>
 
+
+    <style name="RatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_drawable</item>
+        <item name="android:minHeight">18dip</item>
+        <item name="android:maxHeight">18dip</item>
+        <item name="android:isIndicator">false</item>
+    </style>
+
 </resources>

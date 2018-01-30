@@ -869,6 +869,9 @@
                     android:layout_width="358px"
                     android:layout_height="360px"
                     android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_hzTitle"
+                    android:text="@string/hzTitle"
                     android:background="@drawable/selector_bg"/>
 
                 <View
@@ -880,6 +883,9 @@
                     android:layout_width="360px"
                     android:layout_height="360px"
                     android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_imageBrowser"
+                    android:text="@string/imageBrowser"
                     android:background="@drawable/selector_bg"
                     />
 
@@ -889,6 +895,108 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_rolling"
+                    android:text="@string/rolling"
+                    android:background="@drawable/selector_bg"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_SelCity"
+                    android:text="@string/SelCity"
+                    android:background="@drawable/selector_bg"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_goodview"
+                    android:text="@string/goodview"
+                    android:background="@drawable/selector_bg"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_XRichText"
+                    android:text="@string/XRichText"
+                    android:background="@drawable/selector_bg"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="358px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="openAppStore"
+                    android:text="@string/openAppStore"
+                    android:background="@drawable/selector_bg"/>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="360px"
+                    android:background="#cacaca"/>
+
+                <TextView
+                    android:layout_width="360px"
+                    android:layout_height="360px"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:id="@+id/tb_FinestWebView"
+                    android:text="@string/FinestWebView"
+                    android:background="@drawable/selector_bg"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#cacaca"/>
+
 
         </com.zhy.autolayout.AutoLinearLayout>
     </ScrollView>

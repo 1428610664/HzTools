@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <hz.com.hztools.widget.HzTitle
+        android:id="@+id/rx_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:title="标题"
+        app:titleColor="@color/white"/>
+
+    <hz.com.hztools.widget.HzTitle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        app:leftIconVisibility="false"
+        app:title="标题"
+        app:titleColor="@color/white"/>
+
+    <hz.com.hztools.widget.HzTitle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        app:leftText="左边"
+        app:leftIconVisibility="false"
+        app:rightTextColor="@color/white"
+        app:leftTextVisibility="true"
+        app:title="标题"
+        app:rightText="右边"
+        app:rightTextVisibility="true"
+        app:titleColor="@color/white"/>
+
+    <hz.com.hztools.widget.HzTitle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        app:leftText="左边"
+        app:rightTextColor="@color/white"
+        app:leftTextVisibility="true"
+        app:title="标题"
+        app:rightText="右边"
+        app:rightTextVisibility="true"
+        app:titleColor="@color/white"/>
+
+    <hz.com.hztools.widget.HzTitle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        app:leftText="左边"
+        app:rightTextColor="@color/white"
+        app:leftTextVisibility="true"
+        app:title="标题"
+        app:rightIconVisibility="true"
+        app:titleColor="@color/white"/>
+
+    <hz.com.hztools.widget.HzTitle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        app:leftText="左边"
+        app:rightTextColor="@color/white"
+        app:leftTextVisibility="true"
+        app:title="标题"
+        app:rightIconVisibility="true"
+        app:titleColor="@color/white"
+        app:rightText="右边"
+        app:rightTextVisibility="true"/>
+
+
+</LinearLayout>

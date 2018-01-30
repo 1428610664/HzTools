@@ -121,4 +121,17 @@ dependencies {
     /* 日期选择 */
     compile 'cn.aigestudio.datepicker:DatePicker:2.2.0'
     compile project(':hzruntext')
+    /* 图片预览 */
+    //compile 'com.github.maning0303:MNImageBrowser:V1.0.3'
+    compile project(':imagebrowserlibrary')
+    /* spinner下拉选择 */
+    compile 'com.jaredrummler:material-spinner:1.2.4'
+    /* 城市选择 */
+    compile 'com.zaaach:citypicker:1.2'
+    /* 点赞 */
+    compile 'com.wx.goodview:goodview:1.0.0'
+    /* TextView加载富文本 */
+    compile 'com.github.limedroid:XRichText:v1.0.0'
+    /* 加载webView */
+    compile 'com.thefinestartist:finestwebview:1.2.7'
 }

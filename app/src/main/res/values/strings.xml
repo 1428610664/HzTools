@@ -16,6 +16,13 @@
     <string name="pullZoom">弹性图片</string>
     <string name="dialogplus">工具弹窗</string>
 
+    <!-- webView 所需 -->
+    <string name="menu_action_refresh">刷新</string>
+    <string name="menu_action_share">分享</string>
+    <string name="menu_action_copy">复制URL</string>
+    <string name="menu_action_openwith">其他方式打开</string>
+    <string name="copied_to_clipboard">已复制到粘贴板</string>
+
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -187,4 +194,12 @@
     <string name="BabushkText">BabushkaText</string>
     <string name="DatePicker">日期选择</string>
     <string name="runTextView">广告</string>
+    <string name="hzTitle">hzTitle</string>
+    <string name="imageBrowser">图片预览</string>
+    <string name="rolling">背景渐变</string>
+    <string name="SelCity">城市选择</string>
+    <string name="goodview">点赞</string>
+    <string name="XRichText">XRichText</string>
+    <string name="openAppStore">给我好评</string>
+    <string name="FinestWebView">FinestWebView</string>
 </resources>
