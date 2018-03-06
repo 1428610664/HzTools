@@ -232,6 +232,12 @@ public class MainActivity extends BaseActivity {
             case R.id.tb_FinestWebView:
                 WebUtils.openInternal(this, "https://github.com/1428610664");
                 break;
+            case R.id.tb_tips:
+                openActivity(TipsActivity.class);
+                break;
+            case R.id.tb_layoutSwitch:
+                openActivity(LayoutSwitchActivity.class);
+                break;
         }
     }
 

@@ -90,6 +90,8 @@
         <activity android:name=".acticity.RollingRecyclerview"/>
         <activity android:name=".acticity.GoodViewActivity"/>
         <activity android:name=".acticity.XRichTextActivity"/>
+        <activity android:name=".acticity.TipsActivity"/>
+        <activity android:name=".acticity.LayoutSwitchActivity"/>
 
         <activity
             android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"

@@ -202,4 +202,6 @@
     <string name="XRichText">XRichText</string>
     <string name="openAppStore">给我好评</string>
     <string name="FinestWebView">FinestWebView</string>
+    <string name="tb_tips">Tips</string>
+    <string name="tb_layoutSwitch">LayoutSwitch</string>
 </resources>

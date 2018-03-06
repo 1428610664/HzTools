@@ -37,6 +37,7 @@ configurations.all {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.google.android.gms:play-services-appindexing:8.4.0'
     compile 'com.google.code.gson:gson:2.3.1'
@@ -134,4 +135,6 @@ dependencies {
     compile 'com.github.limedroid:XRichText:v1.0.0'
     /* 加载webView */
     compile 'com.thefinestartist:finestwebview:1.2.7'
+    /* tips */
+    compile 'com.tomergoldst.android:tooltips:1.0.9'
 }
