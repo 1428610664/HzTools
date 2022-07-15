@@ -114,8 +114,8 @@ public class OkgoActivity extends AppCompatActivity {
         selPath.setVisibility(View.GONE);
         String logoUrl = "http://server.jeasonlzy.com/OkHttpUtils/method";
         OkGo.<String>post(logoUrl)
-                .params("userName", "tt1")
-                .params("password", "&x2qa1k-DxM2?n7a?3")
+                .params("userName", "xxxx")
+                .params("password", "xxxx")
                 .isMultipart(true)
                 .execute(new DialogCallback<String>(this) {
                     @Override
@@ -155,7 +155,7 @@ public class OkgoActivity extends AppCompatActivity {
             selPath.setText(sb.toString());
         }
 
-        OkGo.<LzyResponse<ServerModel>>post("http://server.jeasonlzy.com/OkHttpUtils/upload")//
+        OkGo.<LzyResponse<ServerModel>>post("http://xxxx.com/OkHttpUtils/upload")//
                 .tag(this)//
                 .headers("header1", "headerValue1")//
                 .headers("header2", "headerValue2")//
